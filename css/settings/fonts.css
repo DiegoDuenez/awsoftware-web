@@ -1,0 +1,30 @@
+/*
+|   ---------------------------------------------------------------------------------
+|   @Settings (Fonts)
+|   ---------------------------------------------------------------------------------
+|   
+|   Here you can put all your own font families using the @font-face rule.
+|
+*/
+
+
+
+@font-face {
+    font-family: 'BakbakOneRegular';
+    src: url('../../fonts/BakbakOne-Regular.ttf') format('woff');
+}
+
+@font-face {
+    font-family: 'GothamMedium';
+    src: url('../../fonts/GothamMedium.ttf') format('woff');
+}
+
+@font-face {
+    font-family: 'PorticoOutline400';
+    src: url('../../fonts/PorticoOutline400.otf') format('woff');
+}
+
+@font-face {
+    font-family: 'PorticoRegular400';
+    src: url('../../fonts/PorticoRegular400.otf') format('woff');
+}

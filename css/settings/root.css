@@ -1,0 +1,70 @@
+/*
+|   ---------------------------------------------------------------------------------
+|   @Settings (Root)
+|   ---------------------------------------------------------------------------------
+|   
+|   Here you can put all your own values and variables that you can use in your project.
+|   For variables are put inside the :root pseudo-class.
+|
+*/
+
+
+:root{
+
+    /*
+    /   ---------------------------------------------------------------------------------
+    /   Font sizes
+    /   ---------------------------------------------------------------------------------
+    */
+    --fs-titulos: 2rem;
+    --fs-subtitulos: 1.5rem;
+    --fs-textos: 1rem;
+
+    /*
+    /   ---------------------------------------------------------------------------------
+    /   Colors
+    /   ---------------------------------------------------------------------------------
+    */
+    --purpura: #7f4890;
+    --azul-200: #3b5f85;
+    --azul-100: #75C4F2;
+}
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+        -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+        -webkit-padding-start: 0px;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    position: relative;
+    overflow: hidden !important;
+    background-image: url('../../assets/img/fondo.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+body>div {
+    overflow: hidden !important;
+}
+body>section {
+    overflow: hidden !important;
+}

@@ -1,0 +1,45 @@
+/*
+|   ---------------------------------------------------------------------------------
+|   @Components (Nav)
+|   ---------------------------------------------------------------------------------
+|   
+|   In this folder you create all components (one file per component) that you will need like navs, buttons, etc...
+|   This components don't belong to a specific page, view, container, etc... of your project,
+|   are used globally. 
+|
+*/
+
+
+.nav{
+    display: flex;
+    background-color: transparent;
+    justify-content: space-between;
+    position: fixed;
+    top: 2rem;
+    width: 100%;
+    padding: 3rem 4rem 3rem 4rem;
+}
+
+.nav__logo{
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+}
+
+.nav__img{
+    width: 100%;
+}
+
+.nav__lang{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-family: BakbakOneRegular;
+}
+
+.nav__lang p{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
