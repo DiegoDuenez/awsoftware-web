@@ -15,9 +15,16 @@
     <link rel="stylesheet" href="css/index.css">
     <!--====== GOOGLE RECAPTCHA ======-->
     <script src="https://www.google.com/recaptcha/api.js"></script>
+
+    <style>
+        
+
+    </style>
 </head>
 <body>
 
+   
+    <?php include('templates/components/menu.html') ?>
 
     <?php include('templates/components/buttons.html') ?>
 
@@ -25,11 +32,14 @@
 
     <?php include('templates/layouts/apps.html') ?>
 
-     <!--=== JQUERY ===-->
-     <script src="libs/jquery/jquery,min.js"></script>
+    <?php include('templates/components/footer.html') ?>
+
+    <!--=== JQUERY ===-->
+    <script src="libs/jquery/jquery,min.js"></script>
     <!--=== AOS JS ===-->
     <script src="libs/aos/dist/aos.js"></script>
-  
+    <!--=== MAIN JS ===-->
+    <script src="js/index.js"></script>
 
 
     

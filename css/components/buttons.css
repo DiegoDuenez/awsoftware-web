@@ -18,7 +18,7 @@
     height: 3rem;
     left: 50%;
     transform: translate(-50%, 0);
-    z-index: 999;
+    z-index: 99;
 
 }
 
@@ -51,12 +51,38 @@
     text-align:center;
     font-size:1rem;
     font-family: BakbakOneRegular;
-    background:
-        url('../../assets/img/fondo.jpg') padding-box fixed,
-        linear-gradient(-45deg, #75c4f2 0%,  #7f4890 100%) border-box;
+    transition: .4s;
 }
   
-  .buttons__proyectos:hover {
-    /*background:
-    linear-gradient(-45deg, #2ae88a 0%, #08aeea 100%) border-box;*/
-  }
+.buttons__proyectos.color-3 {
+    background:
+        linear-gradient(-45deg, #75c4f2 0%,  #7f4890 100%) border-box;
+}
+
+
+/*
+.contacto__button{
+    outline: none;
+    color: black;
+    height: 3rem;
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: rgb(0, 0, 0);
+}*/
+
+.buttons__proyectos:hover{
+   /* background-position: 50% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    background-position: right center;*/
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+
+}

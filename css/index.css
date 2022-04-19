@@ -12,6 +12,17 @@
 
 /*
 *   ---------------------------------------------------------------------------------
+*   @Animations
+*   ---------------------------------------------------------------------------------
+*/
+@import url('animations/animate.css');
+@import url('animations/animations.css');
+
+
+
+
+/*
+*   ---------------------------------------------------------------------------------
 *   @Settings
 *   ---------------------------------------------------------------------------------
 */
@@ -28,6 +39,10 @@
 */
 @import url('components/buttons.css');
 @import url('components/nav.css');
+@import url('components/footer.css');
+@import url('components/menu.css');
+
+
 
 
 

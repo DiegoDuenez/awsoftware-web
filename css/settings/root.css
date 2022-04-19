@@ -55,7 +55,6 @@ html{
 }
 
 body{
-    position: relative;
     overflow: hidden !important;
     background-image: url('../../assets/img/fondo.jpg');
     background-position: center;

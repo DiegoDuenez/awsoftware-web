@@ -11,10 +11,12 @@
 
 .apps{
     display: flex;
+    position: absolute;
     width: 100%;
     height: max-content;
     margin-top: 10rem;
     padding: 2rem;
+    
 }
 
 .apps__row{
@@ -70,6 +72,17 @@
     text-transform: uppercase;
     letter-spacing: 0;
 
+}
+
+.apps__mini-title::after{
+    background-color: var(--purpura);
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    vertical-align: middle;
+    width: 30%;
+    margin-left: 1rem;
 }
 
 .apps__img{

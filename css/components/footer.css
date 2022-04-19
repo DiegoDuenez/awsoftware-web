@@ -1,0 +1,42 @@
+/*
+|   ---------------------------------------------------------------------------------
+|   @Components (Footer)
+|   ---------------------------------------------------------------------------------
+|   
+|   In this folder you create all components (one file per component) that you will need like navs, buttons, etc...
+|   This components don't belong to a specific page, view, container, etc... of your project,
+|   are used globally. 
+|
+*/
+
+
+.footer{
+    display: flex;
+    background-color: transparent;
+    justify-content: space-between;
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    padding: 3rem 4rem 1rem 4rem;
+}
+
+.footer__content{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+
+.footer__text{
+    font-family: BakbakOneRegular;
+    color: white;
+}
+
+.footer__text--azul{
+    color: var(--azul-100);
+}
+
+.footer__icon{
+    font-size: 1.5rem;
+    color: white;
+}
