@@ -16,7 +16,25 @@
     height: max-content;
     margin-top: 10rem;
     padding: 2rem;
-    
+}
+
+.apps--top{
+    top: -100%;
+    transition: top 700ms;
+
+}
+
+.apps--bottom{
+    bottom: -100%;
+    transition: bottom 700ms;
+}
+
+.slideShowTop{
+    top: 0;
+}
+
+.slideShowBottom{
+    bottom: 10%;
 }
 
 .apps__row{

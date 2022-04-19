@@ -30,7 +30,24 @@
 
     <?php include('templates/components/nav.html') ?>
 
-    <?php include('templates/layouts/apps.html') ?>
+    <?php
+        
+        if(isset($_GET['page'])){
+            $page = $_GET['page'];
+            if($page == 'apps'){
+                include('templates/layouts/apps.html');
+            }
+        }
+        else{
+            include('templates/layouts/apps.html');
+        }
+        
+
+    ?>
+
+    <?php include('templates/layouts/paginas.html') ?>
+
+    <?php //include('templates/layouts/tiendas.html') ?>
 
     <?php include('templates/components/footer.html') ?>
 

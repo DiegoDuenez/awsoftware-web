@@ -30,6 +30,7 @@
 .footer__text{
     font-family: BakbakOneRegular;
     color: white;
+    text-decoration: none;
 }
 
 .footer__text--azul{
