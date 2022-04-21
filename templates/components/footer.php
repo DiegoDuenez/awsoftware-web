@@ -1,8 +1,7 @@
-
 <footer class="footer">
 
     <div class="footer__content">
-        <a class="footer__text">A W SOFTWARE 2022 <a href="aviso.pdf" target="blank" class="footer__text footer__text--azul">AVISO DE PRIVACIDAD</a></a>
+        <a class="footer__text">A W SOFTWARE <?php echo date("Y");?><a href="aviso.pdf" target="blank" class="footer__text footer__text--azul">AVISO DE PRIVACIDAD</a></a>
     </div>
 
     <div class="footer__content">
