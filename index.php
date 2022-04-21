@@ -28,11 +28,15 @@
 </head>
 <body>
 
+    <?php include('templates/components/navigation.html') ?>
+
     <?php include('templates/components/cursor.html') ?>
 
     <?php include('templates/components/buttons.html') ?>
         
     <?php include('templates/components/nav.html') ?>
+
+    <?php include('templates/components/proyectos.html') ?>
 
     <?php include('templates/components/menu.html') ?>
 
@@ -54,6 +58,8 @@
     <script src="libs/aos/dist/aos.js"></script>
     <!--=== MAIN JS ===-->
     <script src="js/index.js"></script>
+    <script src="js/menu.js"></script>
+
 
         
 </body>

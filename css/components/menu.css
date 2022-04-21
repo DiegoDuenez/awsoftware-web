@@ -31,6 +31,12 @@
     gap: 2rem;
 }
 
+.fullscreen--left{
+    left: 100%;
+    top: 0;
+    transition: left .5s;
+}
+
 .fullscreen__header{
     display: flex;
     width: 100%;
@@ -159,6 +165,9 @@
     top:0;
 }
 
+.open--left{
+    left:0;
+}
 /*
 .fullscreen__header{
     display: flex;

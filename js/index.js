@@ -153,6 +153,8 @@ $(function () {
         $('.circulo').css('background-color','var(--azul-100)')
         $("#fullscreen").removeClass('open');
 
+        $(".fullscreen-close").addClass('animate__hinge')
+
         $("#navigation-image").css("display", "block");
         $("body").css('overflow','scroll')
         $(".cursor").css("display", "none");
@@ -163,6 +165,7 @@ $(function () {
     })
 
     $(".fullscreen-open").click(function () {
+        $(".fullscreen-close").removeClass('animate__hinge')
         $('.circulo').css('background-color','white')
         if($("#fullscreen").hasClass('open')){
             $("#fullscreen").removeClass('open');
