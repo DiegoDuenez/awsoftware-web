@@ -1,40 +1,12 @@
-/*
-|   ---------------------------------------------------------------------------------
-|   @Layouts (App)
-|   ---------------------------------------------------------------------------------
-|
-|   In this folder you create all layouts (one file per layout) that you will use for your pages 
-|   like containers, boxes, sections, etc...
-|
-*/
+
 
 
 .apps{
     display: flex;
-    position: absolute;
     width: 100%;
     height: max-content;
-    margin-top: 10rem;
+    margin-top: 1rem;
     padding: 2rem;
-}
-
-.apps--top{
-    top: -100%;
-    transition: top 700ms;
-
-}
-
-.apps--bottom{
-    bottom: -100%;
-    transition: bottom 700ms;
-}
-
-.slideShowTop{
-    top: 0;
-}
-
-.slideShowBottom{
-    bottom: 10%;
 }
 
 .apps__row{
@@ -42,7 +14,7 @@
     flex-direction: row;
     width: 100%;
     padding: 0 7rem 0 7rem;
-    gap: 10rem;
+    gap: 5rem;
 }
 
 .apps__container{
@@ -50,10 +22,12 @@
     width: 50%;
     flex-direction: column;
     gap: 2rem;
+    align-items: center;
 }
 
-.apps__container--end{
-    align-items: center;
+.apps__header{
+    display: flex;
+    flex-direction: column;
 }
 
 .apps__content{
@@ -66,13 +40,9 @@
 .apps__image{
     display: flex;
     object-fit: contain;
-    justify-content: flex-end;
     width: 70%;
-}
-
-.apps__content--column{
     flex-direction: column;
-    justify-content: flex-start;
+    align-items: center;
 }
 
 .apps__title{
@@ -82,6 +52,11 @@
     text-transform: uppercase;
     letter-spacing: 0.2rem;
 }
+    @media screen and (min-width: 318px) and (max-width: 572px) { 
+        .apps__title{
+            font-size: 2rem;
+        }
+    }
 
 .apps__mini-title{
     font-family: BakbakOneRegular;
@@ -89,11 +64,22 @@
     color: var(--purpura);
     text-transform: uppercase;
     letter-spacing: 0;
-
+    background: linear-gradient(-45deg, #292345, #674ed7, #7f4890, #9639b2);
+	background-size: 300%;
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: animated_text 10s ease-in-out infinite;
+	-moz-animation: animated_text 10s ease-in-out infinite;
+	-webkit-animation: animated_text 10s ease-in-out infinite;
 }
+    @media screen and (min-width: 318px) and (max-width: 395px) { 
+        .apps__mini-title{
+            font-size: 1rem;
+        }
+    }
 
 .apps__mini-title::after{
-    background-color: var(--purpura);
+   /* background-color: var(--purpura);*/
     content: "";
     display: inline-block;
     height: 2px;
@@ -101,6 +87,13 @@
     vertical-align: middle;
     width: 30%;
     margin-left: 1rem;
+
+    background: linear-gradient(-45deg, #292345, #674ed7, #7f4890, #9639b2);
+	background-size: 300%;
+	-webkit-text-fill-color: transparent;
+	animation: animated_text 10s ease-in-out infinite;
+	-moz-animation: animated_text 10s ease-in-out infinite;
+	-webkit-animation: animated_text 10s ease-in-out infinite;
 }
 
 .apps__img{
@@ -112,4 +105,21 @@
     color: white;
     text-align: justify;
     line-height: 1.5rem;
+}
+    @media screen and (min-width: 573px) and (max-width: 800px) { 
+        .apps__text{
+            line-height: 1rem;
+        }
+    }
+    @media screen and (min-width: 318px) and (max-width: 572px) { 
+        .apps__text{
+            line-height: 1rem;
+            font-size:1rem;
+        }
+    }
+
+@keyframes animated_text {
+	0% { background-position: 0px 50%;  }
+	50% { background-position: 100% 50%; text-shadow: 0 0 40px #4b2adf }
+	100% { background-position: 0px 50%;  }
 }

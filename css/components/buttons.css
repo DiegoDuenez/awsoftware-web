@@ -12,19 +12,17 @@
 
 .buttons{
     display: flex;
-    position: fixed;
     top: 0;
-    width: 7rem;
-    height: 3rem;
-    left: 50%;
-    transform: translate(-50%, 0);
+    width: 100%;
     z-index: 99;
-
+    justify-content: center;
+    align-items: center;
 }
+
 
 .buttons__arrow{
     display: flex;
-    width: 50%;
+    width: 4rem;
     justify-content: center;
     align-items: center;
     text-decoration: none;
@@ -33,6 +31,7 @@
     background-color: transparent;
     transition: 400ms;
     cursor: pointer;
+    height: 4rem;
 }
 
 .buttons__arrow:hover{
@@ -40,6 +39,12 @@
     color: var(--azul-200);
 }
 
+.buttons__text{
+    opacity: 0;
+    color: white;
+    transition: 400ms;
+    font-family: BakbakOneRegular;
+}
 
 .buttons__proyectos {
     width: 170px;
@@ -52,37 +57,26 @@
     font-size:1rem;
     font-family: BakbakOneRegular;
     transition: .4s;
+
 }
   
 .buttons__proyectos.color-3 {
     background:
         linear-gradient(-45deg, #75c4f2 0%,  #7f4890 100%) border-box;
+	/*background-size: 300%;
+	animation: animated_text 10s ease-in-out infinite;
+	-moz-animation: animated_text 10s ease-in-out infinite;
+	-webkit-animation: animated_text 10s ease-in-out infinite;*/
 }
 
-
-/*
-.contacto__button{
-    outline: none;
-    color: black;
-    height: 3rem;
-    padding: 10px;
-    font-weight: bold;
-    border: none;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-    text-align: center;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: rgb(0, 0, 0);
-}*/
-
 .buttons__proyectos:hover{
-   /* background-position: 50% 0;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-    background-position: right center;*/
+
     box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
 
+}
+
+@keyframes animated_text {
+	0% { background-position: 0px 50%;  }
+	50% { background-position: 100% 50%; box-shadow: 0 0 40px #674ed7; }
+	100% { background-position: 0px 50%; }
 }

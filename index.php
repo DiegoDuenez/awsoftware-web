@@ -25,21 +25,16 @@
     <link rel="stylesheet" href="css/index.css">
     <!--====== GOOGLE RECAPTCHA ======-->
     <script src="https://www.google.com/recaptcha/api.js"></script>
-
-    <style>
-        
-
-    </style>
 </head>
 <body>
 
-    <div class="menu-cursor" id="cursor"> <div class="circulo"></div> </div>
-
-    <?php include('templates/components/menu.html') ?>
+    <?php include('templates/components/cursor.html') ?>
 
     <?php include('templates/components/buttons.html') ?>
-
+        
     <?php include('templates/components/nav.html') ?>
+
+    <?php include('templates/components/menu.html') ?>
 
     <?php include('templates/layouts/apps.html') ?>
 
@@ -48,6 +43,8 @@
     <?php include('templates/layouts/tiendas.html') ?>
 
     <?php include('templates/layouts/software.html') ?>
+
+    <?php include('templates/layouts/contacto.html') ?>
 
     <?php include('templates/components/footer.php') ?>
 
@@ -58,7 +55,6 @@
     <!--=== MAIN JS ===-->
     <script src="js/index.js"></script>
 
-
-    
+        
 </body>
 </html>
