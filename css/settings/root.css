@@ -28,9 +28,10 @@
     --purpura: #7f4890;
     --azul-200: #3b5f85;
     --azul-100: #75C4F2;
+
+    --animate-delay: 0.5s;
+
 }
-
-
 
 
 * {

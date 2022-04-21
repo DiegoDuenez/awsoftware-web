@@ -31,6 +31,9 @@ $("#siguiente").click(function(){
         });
         $("#apps").fadeOut('slow');
         $("#paginas").fadeIn('slow');
+
+        $("#paginas-header").addClass('animate__fadeInUp');
+        //$("#paginas-header").addClass('animate__delay-1s');
         view = 2
     }
     else if(view == 2){
@@ -40,6 +43,9 @@ $("#siguiente").click(function(){
         });
         $("#paginas").fadeOut('slow');
         $("#tiendas").fadeIn('slow');
+
+        $("#tiendas-header").addClass('animate__fadeInUp');
+
         view = 3
     }
     else if(view == 3){
@@ -49,6 +55,9 @@ $("#siguiente").click(function(){
         });
         $("#tiendas").fadeOut('slow');
         $("#software").fadeIn('slow');
+
+        $("#software-header").addClass('animate__fadeInUp');
+
         view = 4
     }
     else if(view == 4){
@@ -58,6 +67,7 @@ $("#siguiente").click(function(){
         });
         $("#software").fadeOut('slow');
         $("#contacto").fadeIn('slow');
+
         view = 5
     }
     
