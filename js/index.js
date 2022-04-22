@@ -24,11 +24,7 @@ logo = $('#logo')
 $("#siguiente").click(function(){
 
     if(view == 1){
-        logo.removeClass('animate__backInLeft')
-        logo.removeClass('animate__wobble')
-        window.requestAnimationFrame(function() {
-            logo.addClass('animate__wobble')
-        });
+        
         $("#apps").fadeOut('slow');
         $("#paginas").fadeIn('slow');
 
@@ -37,10 +33,7 @@ $("#siguiente").click(function(){
         view = 2
     }
     else if(view == 2){
-        logo.removeClass('animate__wobble')
-        window.requestAnimationFrame(function() {
-            logo.addClass('animate__wobble')
-        });
+        
         $("#paginas").fadeOut('slow');
         $("#tiendas").fadeIn('slow');
 
@@ -49,10 +42,7 @@ $("#siguiente").click(function(){
         view = 3
     }
     else if(view == 3){
-        logo.removeClass('animate__wobble')
-        window.requestAnimationFrame(function() {
-            logo.addClass('animate__wobble')
-        });
+       
         $("#tiendas").fadeOut('slow');
         $("#software").fadeIn('slow');
 
@@ -61,10 +51,6 @@ $("#siguiente").click(function(){
         view = 4
     }
     else if(view == 4){
-        logo.removeClass('animate__wobble')
-        window.requestAnimationFrame(function() {
-            logo.addClass('animate__wobble')
-        });
         $("#software").fadeOut('slow');
         $("#contacto").fadeIn('slow');
 
@@ -77,38 +63,26 @@ $("#anterior").click(function(){
 
    
      if(view == 2){
-        logo.removeClass('animate__wobble')
-        window.requestAnimationFrame(function() {
-            logo.addClass('animate__wobble')
-        });
+        
         $("#apps").fadeIn('slow');
         $("#paginas").fadeOut('slow');
         view = 1
     }
     else if(view == 3){
-        logo.removeClass('animate__wobble')
-        window.requestAnimationFrame(function() {
-            logo.addClass('animate__wobble')
-        });
+       
         $("#paginas").fadeIn('slow');
         $("#tiendas").fadeOut('slow');
         view = 2
 
     }
     else if(view == 4){
-        logo.removeClass('animate__wobble')
-        window.requestAnimationFrame(function() {
-            logo.addClass('animate__wobble')
-        });
+        
         $("#software").fadeOut('slow');
         $("#tiendas").fadeIn('slow');
         view = 3
     }
     else if(view == 5){
-        logo.removeClass('animate__wobble')
-        window.requestAnimationFrame(function() {
-            logo.addClass('animate__wobble')
-        });
+        
         $("#contacto").fadeOut('slow');
         $("#software").fadeIn('slow');
         view = 4
