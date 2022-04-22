@@ -58,11 +58,14 @@ html{
 
 body{
     overflow: hidden !important;
-    background-image: url('../../assets/img/fondo.jpg');
+    background-image: url('../../assets/img/NOSOTROS.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     animation: shrink 5s infinite alternate;
+    transition: background 1s linear;
+
+   
 }
 
 body>div {
@@ -83,3 +86,5 @@ body>section {
     transform: scale(1, 1);
   }
   }
+
+

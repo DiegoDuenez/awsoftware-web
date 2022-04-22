@@ -10,12 +10,7 @@ $(function () {
         cursor.style.top =  e.clientY + "px";
     })
 
-    $(".fullscreen__link").hover(function(){
-        $(".cursor").css("display", "none");
-        
-    }, function(){
-        $(".cursor").css("display", "block");
-    });
+    
 
     $(".fullscreen__input").hover(function(){
         $(".cursor").css("display", "none");
@@ -31,6 +26,19 @@ $(function () {
     $(".menu-close").click(function(){
         /*$('.fullscreen__close-button').css('background-color','white')
         $('.fullscreen__close-button').css('color','var(--azul-100)')*/
+
+        $('#navigation').removeClass('animate__slideOutUp')
+        $('#navigation').removeClass('animate__faster')
+        $('#navigation').addClass('animate__slideInDown')
+        $('#navigation').addClass('animate__slow')
+
+
+        if(view == 1){
+            $('#nosotros').fadeIn()
+        }
+        else if(view == 2){
+            $('#apps').fadeIn()
+        }
 
         $('.circulo').css('background-color','var(--azul-100)')
         
@@ -49,6 +57,21 @@ $(function () {
     })
 
     $(".menu-open").click(function () {
+
+        $('#navigation').removeClass('animate__delay-2s')
+        $('#navigation').removeClass('animate__slideInDown')
+        $('#navigation').removeClass('animate__slow')
+        $('#navigation').addClass('animate__slideOutUp')
+       // $('#navigation').addClass('animate__slower')
+
+        if(view == 1){
+            $('#nosotros').fadeOut()
+            /*$('#menuBg').css('background-image', "url('assets/img/NOSOTROS.jpg')")*/
+        }
+        else if(view == 2){
+            $('#apps').fadeOut()
+        }
+
         $(".menu-close").removeClass('animate__slideOutUp')
         $(".menu-close").addClass('animate__slideInDown')
 
@@ -79,7 +102,7 @@ $(function () {
         }
     })
 
-    $(".fullscreen__link").click(function(){
+    /*$(".fullscreen__link").click(function(){
         if($("#menu").hasClass('open--left')){
             $("#menu").removeClass('open--left');
             //$("#navigation-image").attr("src","assets/menu_verde.png");
@@ -93,6 +116,6 @@ $(function () {
             $("#navigation-image").css("display", "none");
             $("body").css('overflow','hidden')
         }
-    })
+    })*/
 
 })

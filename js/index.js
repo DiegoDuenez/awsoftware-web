@@ -25,67 +25,90 @@ $("#siguiente").click(function(){
 
     if(view == 1){
         
+        $("#nosotros").fadeOut('slow');
+        $("#apps").fadeIn('slow');
+        $("#apps-header").addClass('animate__fadeInUp');
+        $("body").css('background-image', "url('assets/img/SERVICIOS.jpg')")
+        view = 2
+        console.log(view)
+    }
+    else if(view == 2){
+        
         $("#apps").fadeOut('slow');
         $("#paginas").fadeIn('slow');
 
         $("#paginas-header").addClass('animate__fadeInUp');
-        //$("#paginas-header").addClass('animate__delay-1s');
-        view = 2
+
+        view = 3
+        console.log(view)
+
     }
-    else if(view == 2){
-        
+    else if(view == 3){
+       
         $("#paginas").fadeOut('slow');
         $("#tiendas").fadeIn('slow');
 
         $("#tiendas-header").addClass('animate__fadeInUp');
 
-        view = 3
+        view = 4
+        console.log(view)
+
     }
-    else if(view == 3){
-       
+    else if(view == 4){
         $("#tiendas").fadeOut('slow');
         $("#software").fadeIn('slow');
 
         $("#software-header").addClass('animate__fadeInUp');
 
-        view = 4
+        view = 5
+        console.log(view)
+
     }
-    else if(view == 4){
+    else if(view == 5){
         $("#software").fadeOut('slow');
         $("#contacto").fadeIn('slow');
+        $("body").css('background-image', "url('assets/img/CONTACTO.jpg')")
+        view = 6
+        console.log(view)
 
-        view = 5
     }
     
 });
 
 $("#anterior").click(function(){
 
-   
-     if(view == 2){
+    if(view == 2){
+        
+        $("#nosotros").fadeIn('slow');
+        $("#apps").fadeOut('slow');
+        view = 1
+        $("body").css('background-image', "url('assets/img/NOSOTROS.jpg')")
+    }
+    else if(view == 3){
         
         $("#apps").fadeIn('slow');
         $("#paginas").fadeOut('slow');
-        view = 1
+        view = 2
     }
-    else if(view == 3){
+    else if(view == 4){
        
         $("#paginas").fadeIn('slow');
         $("#tiendas").fadeOut('slow');
-        view = 2
-
-    }
-    else if(view == 4){
-        
-        $("#software").fadeOut('slow');
-        $("#tiendas").fadeIn('slow');
         view = 3
+
     }
     else if(view == 5){
         
+        $("#software").fadeOut('slow');
+        $("#tiendas").fadeIn('slow');
+        view = 4
+    }
+    else if(view == 6){
+        
         $("#contacto").fadeOut('slow');
         $("#software").fadeIn('slow');
-        view = 4
+        view = 5
+        $("body").css('background-image', "url('assets/img/SERVICIOS.jpg')")
     }
     
 });
@@ -102,13 +125,7 @@ $(function () {
         cursor.style.top =  e.clientY + "px";
     })
 
-    $(".fullscreen__link").hover(function(){
-        $(".cursor").css("display", "none");
-        
-    }, function(){
-        $(".cursor").css("display", "block");
-    });
-
+    
     $(".fullscreen__input").hover(function(){
         $(".cursor").css("display", "none");
     }, function(){
@@ -167,20 +184,18 @@ $(function () {
         }
     })
 
-    $(".fullscreen__link").click(function(){
+    /*$(".fullscreen__link").click(function(){
         if($("#fullscreen").hasClass('open')){
             $("#fullscreen").removeClass('open');
-            //$("#navigation-image").attr("src","assets/menu_verde.png");
             $("#navigation-image").css("display", "block");
             navigation_logo.css("display","block")
             $("body").css('overflow','scroll')
         }
         else{
             $("#fullscreen").addClass('open');
-            //$("#navigation-image").attr("src","assets/menu_blanco.png");
             $("#navigation-image").css("display", "none");
             $("body").css('overflow','hidden')
         }
-    })
+    })*/
 
 })
