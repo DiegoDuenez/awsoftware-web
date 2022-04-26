@@ -5,10 +5,11 @@
     position: absolute;
     width: 3rem;
     height: 100%;
-    background-color: var(--azul-300);
+    background-color: transparent;
     right: 5rem;
     transition: 400ms;
-    color: white;
+    color: var(--azul-100);
+    font-size: 2rem;
     justify-content: center;
     padding-top: 2rem;
 }

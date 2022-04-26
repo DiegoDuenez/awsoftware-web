@@ -54,7 +54,7 @@
         
     <?php include('templates/components/nav.html') ?>
 
-    <?php include('templates/components/proyectos.html') ?>
+    <?php include('templates/components/apps_proyectos.html') ?>
 
     <?php include('templates/components/menu.html') ?>
 
@@ -68,6 +68,8 @@
 
     <?php include('templates/layouts/software.html') ?>
 
+    <?php include('templates/layouts/otrosservicios.html') ?>
+
     <?php include('templates/layouts/contacto.html') ?>
 
     <?php include('templates/components/footer.php') ?>
@@ -79,6 +81,8 @@
     <!--=== MAIN JS ===-->
     <script src="js/index.js"></script>
     <script src="js/menu.js"></script>
+    <script src="js/abastos.js"></script>
+
 
 
         

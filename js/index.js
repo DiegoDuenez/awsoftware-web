@@ -66,11 +66,16 @@ $("#siguiente").click(function(){
     }
     else if(view == 5){
         $("#software").fadeOut('slow');
-        $("#contacto").fadeIn('slow');
-        $("body").css('background-image', "url('assets/img/CONTACTO.jpg')")
+        $("#otros").fadeIn('slow');
         view = 6
         console.log(view)
-
+    }
+    else if(view == 6){
+        $("#otros").fadeOut('slow');
+        $("#contacto").fadeIn('slow');
+        $("body").css('background-image', "url('assets/img/CONTACTO.jpg')")
+        view = 7
+        console.log(view)
     }
     
 });
@@ -105,9 +110,15 @@ $("#anterior").click(function(){
     }
     else if(view == 6){
         
-        $("#contacto").fadeOut('slow');
+        $("#otros").fadeOut('slow');
         $("#software").fadeIn('slow');
         view = 5
+    }
+    else if(view == 7){
+        
+        $("#contacto").fadeOut('slow');
+        $("#otros").fadeIn('slow');
+        view = 6
         $("body").css('background-image', "url('assets/img/SERVICIOS.jpg')")
     }
     
@@ -142,7 +153,7 @@ $(function () {
         $('.fullscreen__close-button').css('color','var(--azul-100)')*/
 
         $('.circulo').css('background-color','var(--azul-100)')
-        $("#fullscreen").removeClass('open');
+        $("#apps_proyectos").removeClass('open');
 
         $(".fullscreen-close").addClass('animate__hinge')
 
@@ -158,8 +169,8 @@ $(function () {
     $(".fullscreen-open").click(function () {
         $(".fullscreen-close").removeClass('animate__hinge')
         $('.circulo').css('background-color','white')
-        if($("#fullscreen").hasClass('open')){
-            $("#fullscreen").removeClass('open');
+        if($("#apps_proyectos").hasClass('open')){
+            $("#apps_proyectos").removeClass('open');
             //$("#navigation-image").attr("src","assets/menu_verde.png");
             $("#navigation-image").css("display", "block");
             $("body").css('overflow','scroll')
@@ -168,7 +179,7 @@ $(function () {
             
         }
         else{
-            $("#fullscreen").addClass('open');
+            $("#apps_proyectos").addClass('open');
             //$("#navigation-image").attr("src","assets/menu_blanco.png");
             //$("body").css('overflow','hidden')
             $(".cursor").css("display", "block");
@@ -185,14 +196,14 @@ $(function () {
     })
 
     /*$(".fullscreen__link").click(function(){
-        if($("#fullscreen").hasClass('open')){
-            $("#fullscreen").removeClass('open');
+        if($("#apps_proyectos").hasClass('open')){
+            $("#apps_proyectos").removeClass('open');
             $("#navigation-image").css("display", "block");
             navigation_logo.css("display","block")
             $("body").css('overflow','scroll')
         }
         else{
-            $("#fullscreen").addClass('open');
+            $("#apps_proyectos").addClass('open');
             $("#navigation-image").css("display", "none");
             $("body").css('overflow','hidden')
         }
