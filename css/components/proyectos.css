@@ -95,6 +95,7 @@
     background-repeat: no-repeat;
     /*transition: background 1s linear;*/
     height: 35rem;
+    transition: 1s;
 }
 
 .proyectos__imagen{
