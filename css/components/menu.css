@@ -113,6 +113,7 @@
     font-size: 4rem;
     text-decoration: none;
     color: white;
+    cursor: pointer;
     transition: .4s;
     color: transparent;
     -webkit-text-stroke-width: 1px;
@@ -127,6 +128,13 @@
 
 }
 
+/*
+#app_abastos{
+    width: 70%;
+    height: 40rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+  }*/
 
 .fullscreen__content{
     display: flex;
@@ -142,10 +150,23 @@
     
 }
 
+.fullscreen__card{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    /*flex-direction: column;*/
+    object-fit: contain;
+    justify-content: center;
+    background-color:blueviolet;
+}
+
 .img__background{
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    display: flex;
+    background-color: rgb(255, 255, 0);
+}
+
+.fullscreen__img{
+    width: 20rem;
 }
 
 .fullscreen__content--w70{
@@ -160,9 +181,7 @@
     width: 10%;
 }
 
-.fullscreen__img{
-    width: 100%;
-}
+
 
 .fullscreen__content--column{
     flex-direction: column;
@@ -198,7 +217,6 @@
 .fullscreen__text--azul{
     color: var(--azul-100);
 }
-
 
 
 
@@ -445,4 +463,23 @@
     100% {
         opacity: 1
     }
+}
+
+.fullscreen__gradient{
+	background: linear-gradient(-45deg, #234d7bbb, #032f5ebb, #082a50bb, #010f1ebb);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+    backdrop-filter: blur(2px);
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }

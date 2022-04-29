@@ -10,7 +10,6 @@ $(function () {
         cursor.style.top =  e.clientY + "px";
     })
 
-    
 
     $(".fullscreen__input").hover(function(){
         $(".cursor").css("display", "none");
@@ -23,21 +22,85 @@ $(function () {
         $(".cursor").css("display", "block");
     });
 
-    $(".menu-close").click(function(){
-        /*$('.fullscreen__close-button').css('background-color','white')
-        $('.fullscreen__close-button').css('color','var(--azul-100)')*/
+
+    $(".fullscreen__link").click(function(){
 
         $('#navigation').removeClass('animate__slideOutUp')
         $('#navigation').removeClass('animate__faster')
         $('#navigation').addClass('animate__slideInDown')
-        $('#navigation').addClass('animate__slow')
 
+        if($(this).is("#nosotros_link") ) {
+            view = 1
+            $('#nosotros').fadeIn()
+            $("body").css('background-image', "url('assets/img/NOSOTROS.jpg')")
+        }
+        else if($(this).is("#apps_link") ) {
+            view = 2
+            $('#apps').fadeIn()
+            $("body").css('background-image', "url('assets/img/SERVICIOS.jpg')")
+        }
+        else if($(this).is("#paginas_link") ) {
+            view = 3
+            $('#paginas').fadeIn()
+        }
+        else if($(this).is("#tiendas_link") ) {
+            view = 4
+            $("#paginas").fadeOut('slow');
+            $('#tiendas').fadeIn()
+        }
+        else if($(this).is("#software_link") ) {
+            view = 5
+            $('#software').fadeIn()
+        }
+        else if($(this).is("#otros_link") ) {
+            view = 6
+            $('#otros').fadeIn()
+        }
+        else if($(this).is("#contacto_link") ) {
+            view = 7
+            $('#contacto').fadeIn()
+            $("body").css('background-image', "url('assets/img/CONTACTO.jpg')")
+        }
+
+        $('.circulo').css('background-color','var(--azul-100)')
+        
+        $("#menu").removeClass('open--left');
+
+        $(".fullscreen-close").removeClass('animate__slideInDown')
+        $(".menu-close").addClass('animate__slideOutUp')
+
+        $("#navigation-image").css("display", "block");
+        $("body").css('overflow','scroll')
+        $(".cursor").css("display", "none");
+
+    })
+
+    $(".menu-close").click(function(){
+   
+        $('#navigation').removeClass('animate__slideOutUp')
+        $('#navigation').removeClass('animate__faster')
+        $('#navigation').addClass('animate__slideInDown')
 
         if(view == 1){
             $('#nosotros').fadeIn()
         }
         else if(view == 2){
             $('#apps').fadeIn()
+        }
+        else if(view == 3){
+            $('#paginas').fadeIn()
+        }
+        else if(view == 4){
+            $('#tiendas').fadeIn()
+        }
+        else if(view == 5){
+            $('#software').fadeIn()
+        }
+        else if(view == 6){
+            $('#otros').fadeIn()
+        }
+        else if(view == 7){
+            $('#contacto').fadeIn()
         }
 
         $('.circulo').css('background-color','var(--azul-100)')
@@ -51,6 +114,7 @@ $(function () {
         $("body").css('overflow','scroll')
         $(".cursor").css("display", "none");
         navigation_logo.css("display","block")
+
     })
     $(".fullscreen__input").click(function(event){
         event.stopPropagation();
@@ -60,7 +124,6 @@ $(function () {
 
         $('#navigation').removeClass('animate__delay-2s')
         $('#navigation').removeClass('animate__slideInDown')
-        $('#navigation').removeClass('animate__slow')
         $('#navigation').addClass('animate__slideOutUp')
        // $('#navigation').addClass('animate__slower')
 
@@ -70,6 +133,21 @@ $(function () {
         }
         else if(view == 2){
             $('#apps').fadeOut()
+        }
+        else if(view == 3){
+            $('#paginas').fadeOut()
+        }
+        else if(view == 4){
+            $('#tiendas').fadeOut()
+        }
+        else if(view == 5){
+            $('#software').fadeOut()
+        }
+        else if(view == 6){
+            $('#otros').fadeOut()
+        }
+        else if(view == 7){
+            $('#contacto').fadeOut()
         }
 
         $(".menu-close").removeClass('animate__slideOutUp')

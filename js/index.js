@@ -26,18 +26,19 @@ $("#siguiente").click(function(){
     if(view == 1){
         
         $("#nosotros").fadeOut('slow');
-        $("#apps").fadeIn('slow');
-        $("#apps-header").addClass('animate__fadeInUp');
+        $("#software").fadeIn('slow');
+        $("#software-header").addClass('animate__fadeInUp');
         $("body").css('background-image', "url('assets/img/SERVICIOS.jpg')")
         view = 2
         console.log(view)
     }
     else if(view == 2){
         
-        $("#apps").fadeOut('slow');
-        $("#paginas").fadeIn('slow');
+        $("#software").fadeOut('slow');
+        $("#apps").fadeIn('slow');
 
-        $("#paginas-header").addClass('animate__fadeInUp');
+        //$("#apps-header").removeClass('animate__fadeInUp');
+        $("apps-header").addClass('animate__fadeInUp');
 
         view = 3
         console.log(view)
@@ -45,9 +46,10 @@ $("#siguiente").click(function(){
     }
     else if(view == 3){
        
-        $("#paginas").fadeOut('slow');
+        $("#apps").fadeOut('slow');
         $("#tiendas").fadeIn('slow');
 
+        //$("#paginas-header").removeClass('animate__fadeInUp');
         $("#tiendas-header").addClass('animate__fadeInUp');
 
         view = 4
@@ -56,17 +58,21 @@ $("#siguiente").click(function(){
     }
     else if(view == 4){
         $("#tiendas").fadeOut('slow');
-        $("#software").fadeIn('slow');
+        $("#paginas").fadeIn('slow');
 
-        $("#software-header").addClass('animate__fadeInUp');
+       // $("#tiendas-header").removeClass('animate__fadeInUp');
+        $("#paginas-header").addClass('animate__fadeInUp');
 
         view = 5
         console.log(view)
 
     }
     else if(view == 5){
-        $("#software").fadeOut('slow');
+        $("#paginas").fadeOut('slow');
         $("#otros").fadeIn('slow');
+
+        //$("#software-header").removeClass('animate__fadeInUp');
+
         view = 6
         console.log(view)
     }
@@ -74,6 +80,9 @@ $("#siguiente").click(function(){
         $("#otros").fadeOut('slow');
         $("#contacto").fadeIn('slow');
         $("body").css('background-image', "url('assets/img/CONTACTO.jpg')")
+
+        $("#contacto-header").addClass('animate__fadeInUp');
+
         view = 7
         console.log(view)
     }
@@ -85,33 +94,33 @@ $("#anterior").click(function(){
     if(view == 2){
         
         $("#nosotros").fadeIn('slow');
-        $("#apps").fadeOut('slow');
+        $("#software").fadeOut('slow');
         view = 1
         $("body").css('background-image', "url('assets/img/NOSOTROS.jpg')")
     }
     else if(view == 3){
         
-        $("#apps").fadeIn('slow');
-        $("#paginas").fadeOut('slow');
+        $("#software").fadeIn('slow');
+        $("#apps").fadeOut('slow');
         view = 2
     }
     else if(view == 4){
        
-        $("#paginas").fadeIn('slow');
+        $("#apps").fadeIn('slow');
         $("#tiendas").fadeOut('slow');
         view = 3
 
     }
     else if(view == 5){
         
-        $("#software").fadeOut('slow');
+        $("#paginas").fadeOut('slow');
         $("#tiendas").fadeIn('slow');
         view = 4
     }
     else if(view == 6){
         
         $("#otros").fadeOut('slow');
-        $("#software").fadeIn('slow');
+        $("#paginas").fadeIn('slow');
         view = 5
     }
     else if(view == 7){
@@ -210,3 +219,172 @@ $(function () {
     })*/
 
 })
+
+
+cliente = "abastos"
+
+var orden = [cliente]
+
+$(document).ready(function(){
+
+
+    $("#abastosd").click(function(){
+        cliente = $(this).attr('id')
+
+        if(!orden.includes(cliente)){
+            orden.push(cliente)
+            if(orden.length > 2){
+                orden.shift()
+            }
+        }
+        var items = orden.slice(0, 2)
+        //alert(items)
+
+        $("#apps_imagenes").removeClass('animate__backOutUp')
+
+        $("#combugas_ios_imagenes").removeClass('animate__backInRight')
+        $("#combugas_ios_imagenes").addClass('animate__backOutUp')
+
+        /*$("#digital_imagenes").removeClass('animate__backInRight')
+        $("#digital_imagenes").addClass('animate__backOutUp')*/
+
+        $("#combugas_ios_imagenes").fadeOut(function() {
+            $("#apps_imagenes").fadeIn()
+            $("#apps_imagenes").addClass('animate__backInRight')
+        });  
+
+        /*$("#digital_imagenes").fadeOut(function() {
+            $("#apps_imagenes").fadeIn()
+            $("#apps_imagenes").addClass('animate__backInRight')
+        });*/  
+
+        $('#combugasIos').css('background-color','white')
+        $('#digital').css('background-color','white')
+        $('#power').css('background-color','white')
+        $('#tanquesCombugas').css('background-color','white')
+        $(this).css('background-color','var(--azul-100)')
+
+    })
+
+    /*$("#combugasIos").click(function(){
+
+        cliente = $(this).attr('id')
+
+        if(!orden.includes(cliente)){
+            orden.push(cliente)
+            if(orden.length > 2){
+                orden.shift()
+            }
+
+        }
+        var items = orden.slice(0, 2)
+        alert(items)
+
+        $("#combugas_ios_imagenes").removeClass('animate__backOutUp')
+        $("#apps_imagenes").removeClass('animate__backInRight')
+        $("#apps_imagenes").addClass('animate__backOutUp')
+        $("#apps_imagenes").fadeOut(function() {
+            $("#combugas_ios_imagenes").fadeIn()
+            $("#combugas_ios_imagenes").addClass('animate__backInRight')
+        });  
+
+        $('#abastos').css('background-color','white')
+        $('#digital').css('background-color','white')
+        $('#power').css('background-color','white')
+        $('#tanquesCombugas').css('background-color','white')
+        $(this).css('background-color','var(--azul-100)')
+
+    })
+
+    $("#digital").click(function(){
+
+        $(this).css('background-color','var(--azul-100)')
+
+        cliente = $(this).attr('id')
+
+        if(!orden.includes(cliente)){
+            orden.push(cliente)
+            if(orden.length > 2){
+                orden.shift()
+            }
+        }
+
+        var items = orden.slice(0, 2)
+        alert(items)
+
+        $("#combugas_ios_imagenes").removeClass('animate__backOutUp')
+        $("#apps_imagenes").removeClass('animate__backInRight')
+        $("#apps_imagenes").addClass('animate__backOutUp')
+        $("#apps_imagenes").fadeOut(function() {
+            $("#combugas_ios_imagenes").fadeIn()
+            $("#combugas_ios_imagenes").addClass('animate__backInRight')
+        });  
+
+        $('#combugasIos').css('background-color','white')
+        $('#abastos').css('background-color','white')
+        $('#power').css('background-color','white')
+        $('#tanquesCombugas').css('background-color','white')
+        $(this).css('background-color','var(--azul-100)')
+
+    })*/
+
+
+
+    //transition(1);
+  });
+
+
+
+  /*
+  function transition(first)
+  {
+    var img = first
+
+    if(cliente == "abastos"){
+        var src = img == 1 ? "assets/img/proyectos/apps/ABASTOS-SUPER2.png" : "assets/img/proyectos/apps/ABASTOS-SUPER1.png";
+        $('.proyectos__imagenes').css('background-image', 'url('+ src +')')
+    }
+    else if(cliente == "combugasIos"){
+        var src = img == 1 ? "assets/img/proyectos/apps/COMBUGAS-IOS1.png" : img == 2 ?  "assets/img/proyectos/apps/COMBUGAS-IOS2.png" :  "assets/img/proyectos/apps/COMBUGAS-IOS3.png";
+  
+        $("#combugas_ios_img").delay(5000).fadeOut(function() {
+            f = img + 1
+            if(f > 3){
+                f = 1
+            }
+            $(this).attr("src",src).fadeIn(function() {
+                console.log(src)
+                console.log(f)
+                transition(f);
+
+            });
+        });  
+    }
+    else if(cliente == "digital"){
+        var src = img == 1 ? "assets/img/proyectos/apps/DIGITAL-COMPANY2.png" :  "assets/img/proyectos/apps/DIGITAL-COMPANY1.png";
+  
+        $("#combugas_ios_img").delay(5000).fadeOut(function() {
+            f = img + 1
+            if(f > 3){
+                f = 1
+            }
+            $(this).attr("src",src).fadeIn(function() {
+                console.log(src)
+                console.log(f)
+                transition(f);
+
+            });
+        });  
+    }
+        
+  }*/
+
+  $('.slider').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false,
+    speed: 2000,
+  });

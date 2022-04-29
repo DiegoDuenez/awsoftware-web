@@ -1,0 +1,27 @@
+
+
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    object-fit: contain;
+}
+
+.wrapper .container{
+    width: 100%;
+    height: 100%;
+}
+
+.slider__img{
+    width: 80%;
+}
