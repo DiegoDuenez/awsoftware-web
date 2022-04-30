@@ -42,15 +42,21 @@ $(function () {
         else if($(this).is("#paginas_link") ) {
             view = 5
             $('#paginas').fadeIn()
+            $("body").css('background-image', "url('assets/img/SERVICIOS.jpg')")
+
         }
         else if($(this).is("#tiendas_link") ) {
             view = 4
             $("#paginas").fadeOut('slow');
             $('#tiendas').fadeIn()
+            $("body").css('background-image', "url('assets/img/SERVICIOS.jpg')")
+
         }
         else if($(this).is("#software_link") ) {
             view = 2
             $('#software').fadeIn()
+            $("body").css('background-image', "url('assets/img/SERVICIOS.jpg')")
+
         }
         else if($(this).is("#otros_link") ) {
             view = 6
