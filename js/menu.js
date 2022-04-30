@@ -35,12 +35,12 @@ $(function () {
             $("body").css('background-image', "url('assets/img/NOSOTROS.jpg')")
         }
         else if($(this).is("#apps_link") ) {
-            view = 2
+            view = 3
             $('#apps').fadeIn()
             $("body").css('background-image', "url('assets/img/SERVICIOS.jpg')")
         }
         else if($(this).is("#paginas_link") ) {
-            view = 3
+            view = 5
             $('#paginas').fadeIn()
         }
         else if($(this).is("#tiendas_link") ) {
@@ -49,7 +49,7 @@ $(function () {
             $('#tiendas').fadeIn()
         }
         else if($(this).is("#software_link") ) {
-            view = 5
+            view = 2
             $('#software').fadeIn()
         }
         else if($(this).is("#otros_link") ) {
@@ -85,16 +85,16 @@ $(function () {
             $('#nosotros').fadeIn()
         }
         else if(view == 2){
-            $('#apps').fadeIn()
+            $('#software').fadeIn()
         }
         else if(view == 3){
-            $('#paginas').fadeIn()
+            $('#apps').fadeIn()
         }
         else if(view == 4){
             $('#tiendas').fadeIn()
         }
         else if(view == 5){
-            $('#software').fadeIn()
+            $('#paginas').fadeIn()
         }
         else if(view == 6){
             $('#otros').fadeIn()
@@ -132,16 +132,16 @@ $(function () {
             /*$('#menuBg').css('background-image', "url('assets/img/NOSOTROS.jpg')")*/
         }
         else if(view == 2){
-            $('#apps').fadeOut()
+            $('#software').fadeOut()
         }
         else if(view == 3){
-            $('#paginas').fadeOut()
+            $('#apps').fadeOut()
         }
         else if(view == 4){
             $('#tiendas').fadeOut()
         }
         else if(view == 5){
-            $('#software').fadeOut()
+            $('#paginas').fadeOut()
         }
         else if(view == 6){
             $('#otros').fadeOut()
