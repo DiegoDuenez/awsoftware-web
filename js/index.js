@@ -38,6 +38,7 @@ $("#siguiente").click(function(){
         $("#apps").fadeIn('slow');
 
         //$("#apps-header").removeClass('animate__fadeInUp');
+       
         $("apps-header").addClass('animate__fadeInUp');
 
         view = 3
@@ -50,6 +51,9 @@ $("#siguiente").click(function(){
         $("#tiendas").fadeIn('slow');
 
         //$("#paginas-header").removeClass('animate__fadeInUp');
+        /*if($("#tiendas-header").hasClass('animate__fadeInUp')){
+            $("#tiendas-header").removeClass('animate__fadeInUp');
+        }*/
         $("#tiendas-header").addClass('animate__fadeInUp');
 
         view = 4
@@ -96,18 +100,23 @@ $("#anterior").click(function(){
         $("#nosotros").fadeIn('slow');
         $("#software").fadeOut('slow');
         view = 1
+        $("#nosotros-header").addClass('animate__fadeInUp');
         $("body").css('background-image', "url('assets/img/NOSOTROS.jpg')")
     }
     else if(view == 3){
         
         $("#software").fadeIn('slow');
         $("#apps").fadeOut('slow');
+        $("#software-header").addClass('animate__fadeInUp');
+
         view = 2
     }
     else if(view == 4){
        
         $("#apps").fadeIn('slow');
         $("#tiendas").fadeOut('slow');
+        $("#apps-header").addClass('animate__fadeInUp');
+
         view = 3
 
     }
@@ -115,18 +124,22 @@ $("#anterior").click(function(){
         
         $("#paginas").fadeOut('slow');
         $("#tiendas").fadeIn('slow');
+        $("#tiendas-header").addClass('animate__fadeInUp');
         view = 4
     }
     else if(view == 6){
         
         $("#otros").fadeOut('slow');
         $("#paginas").fadeIn('slow');
+        $("#paginas-header").addClass('animate__fadeInUp');
+
         view = 5
     }
     else if(view == 7){
         
         $("#contacto").fadeOut('slow');
         $("#otros").fadeIn('slow');
+        $("#otros-header").addClass('animate__fadeInUp');
         view = 6
         $("body").css('background-image', "url('assets/img/SERVICIOS.jpg')")
     }

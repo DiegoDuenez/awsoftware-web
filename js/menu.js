@@ -32,39 +32,46 @@ $(function () {
         if($(this).is("#nosotros_link") ) {
             view = 1
             $('#nosotros').fadeIn()
+            $("#nosotros-header").addClass('animate__fadeInUp');
             $("body").css('background-image', "url('assets/img/NOSOTROS.jpg')")
         }
         else if($(this).is("#apps_link") ) {
             view = 3
             $('#apps').fadeIn()
+            $("#apps-header").addClass('animate__fadeInUp');
             $("body").css('background-image', "url('assets/img/SERVICIOS.jpg')")
         }
         else if($(this).is("#paginas_link") ) {
             view = 5
             $('#paginas').fadeIn()
+            $("#paginas-header").addClass('animate__fadeInUp');
             $("body").css('background-image', "url('assets/img/SERVICIOS.jpg')")
 
         }
         else if($(this).is("#tiendas_link") ) {
             view = 4
-            $("#paginas").fadeOut('slow');
+           // $("#paginas").fadeOut('slow');
             $('#tiendas').fadeIn()
+            $("#tiendas-header").addClass('animate__fadeInUp');
             $("body").css('background-image', "url('assets/img/SERVICIOS.jpg')")
 
         }
         else if($(this).is("#software_link") ) {
             view = 2
             $('#software').fadeIn()
+            $("#software-header").addClass('animate__fadeInUp');
             $("body").css('background-image', "url('assets/img/SERVICIOS.jpg')")
 
         }
         else if($(this).is("#otros_link") ) {
             view = 6
             $('#otros').fadeIn()
+            $("body").css('background-image', "url('assets/img/SERVICIOS.jpg')")
         }
         else if($(this).is("#contacto_link") ) {
             view = 7
             $('#contacto').fadeIn()
+            $("#contacto-header").addClass('animate__fadeInUp');
             $("body").css('background-image', "url('assets/img/CONTACTO.jpg')")
         }
 
