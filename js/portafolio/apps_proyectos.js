@@ -12,6 +12,13 @@ var descripcion = 'Administración de unidades, operadores y control de pagos de
 var cliente = `<span class="proyectos__text--azul">01 - CLIENTE:</span> Radio Taxis Mandarinas </p>`
 
 
+var imgAbastos = new Array ('assets/img/proyectos/apps/ABASTOS-SUPER1.png', 'assets/img/proyectos/apps/ABASTOS-SUPER2.png');
+var imgCombuIOS = new Array ('assets/img/proyectos/apps/COMBUGAS-IOS1.png', 'assets/img/proyectos/apps/COMBUGAS-IOS2.png', 'assets/img/proyectos/apps/COMBUGAS-IOS3.png');
+
+var arrayImg;
+var index = 1;
+
+
 $('#apps_proyectos_body').on('click','.proyectos__circles *', function() {
 
   cliente = $(this).attr('id')
@@ -36,6 +43,8 @@ $('#apps_proyectos_body').on('click','.proyectos__circles *', function() {
 
   if(cliente == 'abastos'){
 
+    $('.slider').fadeOut(1).delay(500).fadeIn(300);
+  
     descripcion = '...'
     cliente = `<span class="proyectos__text--azul">01 - CLIENTE:</span> Abastos Super </p>`
 
@@ -53,8 +62,9 @@ $('#apps_proyectos_body').on('click','.proyectos__circles *', function() {
       </div>
     </div> `
 
-    $('.slider').slick('slickAdd', img1)
-    $('.slider').slick('slickAdd', img2)
+      $('.slider').slick('slickAdd', img1)
+      $('.slider').slick('slickAdd', img2)
+    
 
     if($(".slider").slick("getSlick").slideCount == 6){
       for(let i = 0; i < 3; i++){
@@ -77,6 +87,8 @@ $('#apps_proyectos_body').on('click','.proyectos__circles *', function() {
 
   }
   else if(cliente == 'combugasIos'){
+
+    $('.slider').fadeOut(1).delay(500).fadeIn(300);
 
     descripcion = '...'
     cliente = `<span class="proyectos__text--azul">02 - CLIENTE:</span> Combugas </p>`
@@ -129,6 +141,8 @@ $('#apps_proyectos_body').on('click','.proyectos__circles *', function() {
   }
   else if(cliente == 'digital'){
 
+    $('.slider').fadeOut(1).delay(500).fadeIn(300);
+
     descripcion = '...'
     cliente = `<span class="proyectos__text--azul">03 - CLIENTE:</span> Digital Company </p>`
 
@@ -170,6 +184,8 @@ $('#apps_proyectos_body').on('click','.proyectos__circles *', function() {
   
   }
   else if(cliente == 'power'){
+
+    $('.slider').fadeOut(1).delay(500).fadeIn(300);
 
     descripcion = '...'
     cliente = `<span class="proyectos__text--azul">04 - CLIENTE:</span> Power Force </p>`
@@ -213,6 +229,8 @@ $('#apps_proyectos_body').on('click','.proyectos__circles *', function() {
   }
   else if(cliente == 'tanquesCombugas'){
    
+    $('.slider').fadeOut(1).delay(500).fadeIn(300);
+
     descripcion = '...'
     cliente = `<span class="proyectos__text--azul">05 - CLIENTE:</span> Combugas </p>`
 
@@ -237,17 +255,11 @@ $('#apps_proyectos_body').on('click','.proyectos__circles *', function() {
       </div>
     </div> `
 
-   
-
-    //$('.slider').fadeTo(500, 0.10, function() {
 
       $('.slider').slick('slickAdd', img1)
       $('.slider').slick('slickAdd', img2)
       $('.slider').slick('slickAdd', img3)
 
-    //}).fadeTo(500, 1)
-
-  
 
     if($(".slider").slick("getSlick").slideCount == 6){
       for(let i = 0; i < 3; i++){
@@ -279,7 +291,9 @@ $('#apps_proyectos_body').on('click','.proyectos__circles *', function() {
 
   })
 
+  
 
 })
+
 
 
