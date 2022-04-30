@@ -76,14 +76,14 @@ $('#software_proyectos_body').on('click','.proyectos__circles *', function() {
     }
 
 
-    $('#software_proyectos_descripción').fadeOut(500, function() {
-        $('#software_proyectos_descripción').text(descripcion).fadeIn(500);
+    $('#software_proyectos_descripcion').fadeOut(500, function() {
+        //$('#software_proyectos_descripcion').text(descripcion).fadeIn(500);
     })
 
-    $('#software_proyectos_cliente').fadeOut(500, function() {
-        $('#software_proyectos_cliente').empty().show()
-        $('#software_proyectos_cliente').append(cliente).fadeIn(500);
-    })
+    $('#software_proyectos_cliente').fadeTo(500,0.10, function() {
+        $('#software_proyectos_descripcion').empty().show()
+        $('#software_proyectos_descripcion').prepend(`<p class="proyectos__text" id="software_proyectos_cliente">${cliente}</p> ` + descripcion).fadeIn(500);
+    }).fadeTo(500,1);
 
     $("#software_proyectos_img").fadeTo(500,0.10, function() {
         $('#software_proyectos_img').attr("src", img);

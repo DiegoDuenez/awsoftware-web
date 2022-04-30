@@ -81,6 +81,9 @@
     width: 50%;
     padding: 0 2rem 0 2rem;
     text-align: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    line-height: 1.5rem;
 
 }
 
