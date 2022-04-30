@@ -1,8 +1,6 @@
 
 
 
-
-
 var cliente = 'abastos'
 
 var currentBackground = 0;
@@ -10,15 +8,36 @@ var limit = 1
 var timeOutTime = 5000
 var proyecto = '#apps_imagenes.proyectos__imagenes'
 
-var backgrounds = [
-  "assets/img/proyectos/apps/ABASTOS-SUPER1.png",
-  "assets/img/proyectos/apps/ABASTOS-SUPER2.png"
-]
+var descripcion = 'Administración de unidades, operadores y control de pagos de las unidades.'
+var cliente = `<span class="proyectos__text--azul">01 - CLIENTE:</span> Radio Taxis Mandarinas </p>`
 
-$('.proyectos__body').on('click','.proyectos__circles *', function() {
+
+$('#apps_proyectos_body').on('click','.proyectos__circles *', function() {
+
   cliente = $(this).attr('id')
+    $(this).data('clicked', true);
+
+    if($(this).data('clicked')){
+        
+        $(".proyectos__circles *").each(function() {   
+
+            var element = $(this);
+            
+            if(!element.is("#"+cliente)){
+                if(element.hasClass('proyectos__circle--active')){
+                    element.removeClass('proyectos__circle--active')
+                }
+            }
+            
+        })
+        $(this).addClass('proyectos__circle--active')
+    
+    }
 
   if(cliente == 'abastos'){
+
+    descripcion = '...'
+    cliente = `<span class="proyectos__text--azul">01 - CLIENTE:</span> Abastos Super </p>`
 
     var img1 = `
     <div class="wrapper" id="imgCombugas1">
@@ -58,13 +77,9 @@ $('.proyectos__body').on('click','.proyectos__circles *', function() {
 
   }
   else if(cliente == 'combugasIos'){
-    backgrounds[0] = "assets/img/proyectos/apps/COMBUGAS-IOS1.png"
-    backgrounds[1] =  "assets/img/proyectos/apps/COMBUGAS-IOS2.png"
-    backgrounds[2] =  "assets/img/proyectos/apps/COMBUGAS-IOS3.png"
 
-   /* $('.wrapper').fadeOut(100, function(){
-      $(this).delay(1000).fadeIn()
-    })*/
+    descripcion = '...'
+    cliente = `<span class="proyectos__text--azul">02 - CLIENTE:</span> Combugas </p>`
 
     var img1 = `
     <div class="wrapper" id="imgCombugas1">
@@ -114,6 +129,9 @@ $('.proyectos__body').on('click','.proyectos__circles *', function() {
   }
   else if(cliente == 'digital'){
 
+    descripcion = '...'
+    cliente = `<span class="proyectos__text--azul">03 - CLIENTE:</span> Digital Company </p>`
+
     var img1 = `
     <div class="wrapper" id="imgCombugas1">
       <div class="container">
@@ -152,6 +170,9 @@ $('.proyectos__body').on('click','.proyectos__circles *', function() {
   
   }
   else if(cliente == 'power'){
+
+    descripcion = '...'
+    cliente = `<span class="proyectos__text--azul">04 - CLIENTE:</span> Power Force </p>`
 
     var img1 = `
     <div class="wrapper" id="imgCombugas1">
@@ -192,6 +213,8 @@ $('.proyectos__body').on('click','.proyectos__circles *', function() {
   }
   else if(cliente == 'tanquesCombugas'){
    
+    descripcion = '...'
+    cliente = `<span class="proyectos__text--azul">05 - CLIENTE:</span> Combugas </p>`
 
     var img1 = `
     <div class="wrapper" id="imgCombugas1">
@@ -214,9 +237,15 @@ $('.proyectos__body').on('click','.proyectos__circles *', function() {
       </div>
     </div> `
 
-    $('.slider').slick('slickAdd', img1)
-    $('.slider').slick('slickAdd', img2)
-    $('.slider').slick('slickAdd', img3)
+   
+
+    //$('.slider').fadeTo(500, 0.10, function() {
+
+      $('.slider').slick('slickAdd', img1)
+      $('.slider').slick('slickAdd', img2)
+      $('.slider').slick('slickAdd', img3)
+
+    //}).fadeTo(500, 1)
 
   
 
@@ -237,9 +266,18 @@ $('.proyectos__body').on('click','.proyectos__circles *', function() {
         $('.slider').slick('slickRemove',0);
       }
     }
-
   
   }
+
+  $('#apps_proyectos_descripción').fadeOut(500, function() {
+    $(this).text(descripcion).fadeIn(500);
+  })
+
+  $('#apps_proyectos_cliente').fadeOut(500, function() {
+      $('#apps_proyectos_cliente').empty().show()
+      $('#apps_proyectos_cliente').append(cliente).fadeIn(500);
+
+  })
 
 
 })

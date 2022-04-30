@@ -158,11 +158,12 @@ $(function () {
     });
 
     $(".fullscreen-close").click(function(){
-        /*$('.fullscreen__close-button').css('background-color','white')
-        $('.fullscreen__close-button').css('color','var(--azul-100)')*/
 
         $('.circulo').css('background-color','var(--azul-100)')
+        
         $("#apps_proyectos").removeClass('open');
+        $("#software_proyectos").removeClass('open');
+
 
         $(".fullscreen-close").addClass('animate__hinge')
 
@@ -175,7 +176,7 @@ $(function () {
         event.stopPropagation();
     })
 
-    $(".fullscreen-open").click(function () {
+    $("#btnProyectosApps.fullscreen-open").click(function () {
         $(".fullscreen-close").removeClass('animate__hinge')
         $('.circulo').css('background-color','white')
         if($("#apps_proyectos").hasClass('open')){
@@ -198,186 +199,40 @@ $(function () {
             const cursor = document.querySelector(".cursor")
             
             document.addEventListener('mousemove', (e)=>{
-               /* cursor.style.left = e.clientX + "px";
-                cursor.style.top =  e.clientY + "px";*/
             })
         }
     })
 
-    /*$(".fullscreen__link").click(function(){
-        if($("#apps_proyectos").hasClass('open')){
-            $("#apps_proyectos").removeClass('open');
+    $("#btnProyectosSoftware.fullscreen-open").click(function () {
+        $(".fullscreen-close").removeClass('animate__hinge')
+        $('.circulo').css('background-color','white')
+        if($("#software_proyectos").hasClass('open')){
+            $("#software_proyectos").removeClass('open');
+            //$("#navigation-image").attr("src","assets/menu_verde.png");
             $("#navigation-image").css("display", "block");
-            navigation_logo.css("display","block")
             $("body").css('overflow','scroll')
+            $(".cursor").css("display", "none");
+            navigation_logo.css('display','block')
+            
         }
         else{
-            $("#apps_proyectos").addClass('open');
+            $("#software_proyectos").addClass('open');
+            //$("#navigation-image").attr("src","assets/menu_blanco.png");
+            //$("body").css('overflow','hidden')
+            $(".cursor").css("display", "block");
             $("#navigation-image").css("display", "none");
-            $("body").css('overflow','hidden')
+            navigation_logo.css("display","none")
+            
+            const cursor = document.querySelector(".cursor")
+            
+            document.addEventListener('mousemove', (e)=>{
+            })
         }
-    })*/
+    })
 
 })
 
 
-cliente = "abastos"
-
-var orden = [cliente]
-
-$(document).ready(function(){
-
-
-    $("#abastosd").click(function(){
-        cliente = $(this).attr('id')
-
-        if(!orden.includes(cliente)){
-            orden.push(cliente)
-            if(orden.length > 2){
-                orden.shift()
-            }
-        }
-        var items = orden.slice(0, 2)
-        //alert(items)
-
-        $("#apps_imagenes").removeClass('animate__backOutUp')
-
-        $("#combugas_ios_imagenes").removeClass('animate__backInRight')
-        $("#combugas_ios_imagenes").addClass('animate__backOutUp')
-
-        /*$("#digital_imagenes").removeClass('animate__backInRight')
-        $("#digital_imagenes").addClass('animate__backOutUp')*/
-
-        $("#combugas_ios_imagenes").fadeOut(function() {
-            $("#apps_imagenes").fadeIn()
-            $("#apps_imagenes").addClass('animate__backInRight')
-        });  
-
-        /*$("#digital_imagenes").fadeOut(function() {
-            $("#apps_imagenes").fadeIn()
-            $("#apps_imagenes").addClass('animate__backInRight')
-        });*/  
-
-        $('#combugasIos').css('background-color','white')
-        $('#digital').css('background-color','white')
-        $('#power').css('background-color','white')
-        $('#tanquesCombugas').css('background-color','white')
-        $(this).css('background-color','var(--azul-100)')
-
-    })
-
-    /*$("#combugasIos").click(function(){
-
-        cliente = $(this).attr('id')
-
-        if(!orden.includes(cliente)){
-            orden.push(cliente)
-            if(orden.length > 2){
-                orden.shift()
-            }
-
-        }
-        var items = orden.slice(0, 2)
-        alert(items)
-
-        $("#combugas_ios_imagenes").removeClass('animate__backOutUp')
-        $("#apps_imagenes").removeClass('animate__backInRight')
-        $("#apps_imagenes").addClass('animate__backOutUp')
-        $("#apps_imagenes").fadeOut(function() {
-            $("#combugas_ios_imagenes").fadeIn()
-            $("#combugas_ios_imagenes").addClass('animate__backInRight')
-        });  
-
-        $('#abastos').css('background-color','white')
-        $('#digital').css('background-color','white')
-        $('#power').css('background-color','white')
-        $('#tanquesCombugas').css('background-color','white')
-        $(this).css('background-color','var(--azul-100)')
-
-    })
-
-    $("#digital").click(function(){
-
-        $(this).css('background-color','var(--azul-100)')
-
-        cliente = $(this).attr('id')
-
-        if(!orden.includes(cliente)){
-            orden.push(cliente)
-            if(orden.length > 2){
-                orden.shift()
-            }
-        }
-
-        var items = orden.slice(0, 2)
-        alert(items)
-
-        $("#combugas_ios_imagenes").removeClass('animate__backOutUp')
-        $("#apps_imagenes").removeClass('animate__backInRight')
-        $("#apps_imagenes").addClass('animate__backOutUp')
-        $("#apps_imagenes").fadeOut(function() {
-            $("#combugas_ios_imagenes").fadeIn()
-            $("#combugas_ios_imagenes").addClass('animate__backInRight')
-        });  
-
-        $('#combugasIos').css('background-color','white')
-        $('#abastos').css('background-color','white')
-        $('#power').css('background-color','white')
-        $('#tanquesCombugas').css('background-color','white')
-        $(this).css('background-color','var(--azul-100)')
-
-    })*/
-
-
-
-    //transition(1);
-  });
-
-
-
-  /*
-  function transition(first)
-  {
-    var img = first
-
-    if(cliente == "abastos"){
-        var src = img == 1 ? "assets/img/proyectos/apps/ABASTOS-SUPER2.png" : "assets/img/proyectos/apps/ABASTOS-SUPER1.png";
-        $('.proyectos__imagenes').css('background-image', 'url('+ src +')')
-    }
-    else if(cliente == "combugasIos"){
-        var src = img == 1 ? "assets/img/proyectos/apps/COMBUGAS-IOS1.png" : img == 2 ?  "assets/img/proyectos/apps/COMBUGAS-IOS2.png" :  "assets/img/proyectos/apps/COMBUGAS-IOS3.png";
-  
-        $("#combugas_ios_img").delay(5000).fadeOut(function() {
-            f = img + 1
-            if(f > 3){
-                f = 1
-            }
-            $(this).attr("src",src).fadeIn(function() {
-                console.log(src)
-                console.log(f)
-                transition(f);
-
-            });
-        });  
-    }
-    else if(cliente == "digital"){
-        var src = img == 1 ? "assets/img/proyectos/apps/DIGITAL-COMPANY2.png" :  "assets/img/proyectos/apps/DIGITAL-COMPANY1.png";
-  
-        $("#combugas_ios_img").delay(5000).fadeOut(function() {
-            f = img + 1
-            if(f > 3){
-                f = 1
-            }
-            $(this).attr("src",src).fadeIn(function() {
-                console.log(src)
-                console.log(f)
-                transition(f);
-
-            });
-        });  
-    }
-        
-  }*/
 
   $('.slider').slick({
     infinite: true,

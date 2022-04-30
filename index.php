@@ -59,6 +59,8 @@
 
     <?php include('templates/components/apps_proyectos.html') ?>
 
+    <?php include('templates/components/software_proyectos.html') ?>
+
     <?php include('templates/components/menu.html') ?>
 
     <?php include('templates/layouts/nosotros.html') ?>
@@ -89,7 +91,9 @@
     <script src="js/index.js"></script>
     <script src="js/menu.js"></script>
     <scripts src="js/abastos.js"></scripts>
-    <script src="js/gallery.js"></script> 
+    <script src="js/portafolio/apps_proyectos.js"></script> 
+    <script src="js/portafolio/software_proyectos.js"></script> 
+
     
         
 </body>
