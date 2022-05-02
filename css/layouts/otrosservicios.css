@@ -16,6 +16,17 @@
     margin-top: 1rem;
     padding: 2rem;
 }
+    @media screen and (min-width: 318px) and (max-width:700px) {
+        .otros-servicios{
+            padding: 1rem;
+        }
+    }
+    @media screen and (min-width: 318px) and (max-width:730px) {
+        .otros-servicios{
+            justify-content: center;
+        }
+
+    }
 
 .otros-servicios__row{
     display: flex;
@@ -24,6 +35,30 @@
     padding: 0 7rem 0 7rem;
     gap: 5rem;
 }
+    @media screen and (min-width: 891px) and (max-width:1080px) {
+        .otros-servicios__row{
+            gap: 3rem;
+            padding: 0 5rem 0 5rem;
+        }
+    }
+    @media screen and (min-width: 801px) and (max-width:890px) {
+        .otros-servicios__row{
+            gap: 3rem;
+            padding: 0 ;
+            justify-content: space-between;
+        }
+    }
+    @media screen and (min-width: 620px) and (max-width:800px) {
+        .otros-servicios__row{
+            gap: 1rem;
+            padding: 0 ;
+        }
+    }
+    @media screen and (min-width: 318px) and (max-width:730px) {
+        .otros-servicios__row{
+            display: none;
+        }
+    }
 
 .otros-servicios__card{
     display:flex;
@@ -32,6 +67,17 @@
     height: 100%;
     align-items: center;
 }
+    @media screen and (min-width: 318px) and (max-width:800px) {
+        .otros-servicios__card{
+            height: fit-content;
+        }
+    }
+    @media screen and (min-width: 318px) and (max-width:730px) {
+        .otros-servicios__card{
+            width: 40%;
+           height: 20rem;
+        }
+    }
 
 .otros-servicios__card-body{
     display: flex;
@@ -81,3 +127,13 @@
 	50% { background-position: 100% 50%; text-shadow: 0 0 40px #ffffff }
 	100% { background-position: 0px 50%;  }
 }
+
+
+#slider_otros{
+    display: none;
+}
+    @media screen and (min-width: 318px) and (max-width:730px) {
+        #slider_otros{
+            display: inline;
+        }
+    }
