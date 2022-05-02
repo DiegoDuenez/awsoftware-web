@@ -180,6 +180,28 @@ $(function () {
 
     $(".fullscreen-close").click(function(){
 
+        if(view == 1){
+            $('#nosotros').fadeIn()
+        }
+        else if(view == 2){
+            $('#software').fadeIn()
+        }
+        else if(view == 3){
+            $('#apps').fadeIn()
+        }
+        else if(view == 4){
+            $('#tiendas').fadeIn()
+        }
+        else if(view == 5){
+            $('#paginas').fadeIn()
+        }
+        else if(view == 6){
+            $('#otros').fadeIn()
+        }
+        else if(view == 7){
+            $('#contacto').fadeIn()
+        }
+
         $('.circulo').css('background-color','var(--azul-100)')
         
         $("#apps_proyectos").removeClass('open');
@@ -200,6 +222,30 @@ $(function () {
     })
 
     $("#btnProyectosApps.fullscreen-open").click(function () {
+
+        if(view == 1){
+            $('#nosotros').fadeOut()
+            /*$('#menuBg').css('background-image', "url('assets/img/NOSOTROS.jpg')")*/
+        }
+        else if(view == 2){
+            $('#software').fadeOut()
+        }
+        else if(view == 3){
+            $('#apps').fadeOut()
+        }
+        else if(view == 4){
+            $('#tiendas').fadeOut()
+        }
+        else if(view == 5){
+            $('#paginas').fadeOut()
+        }
+        else if(view == 6){
+            $('#otros').fadeOut()
+        }
+        else if(view == 7){
+            $('#contacto').fadeOut()
+        }
+
         $(".fullscreen-close").removeClass('animate__hinge')
         $('.circulo').css('background-color','white')
         if($("#apps_proyectos").hasClass('open')){
@@ -227,6 +273,30 @@ $(function () {
     })
 
     $("#btnProyectosSoftware.fullscreen-open").click(function () {
+
+        if(view == 1){
+            $('#nosotros').fadeOut()
+            /*$('#menuBg').css('background-image', "url('assets/img/NOSOTROS.jpg')")*/
+        }
+        else if(view == 2){
+            $('#software').fadeOut()
+        }
+        else if(view == 3){
+            $('#apps').fadeOut()
+        }
+        else if(view == 4){
+            $('#tiendas').fadeOut()
+        }
+        else if(view == 5){
+            $('#paginas').fadeOut()
+        }
+        else if(view == 6){
+            $('#otros').fadeOut()
+        }
+        else if(view == 7){
+            $('#contacto').fadeOut()
+        }
+
         $(".fullscreen-close").removeClass('animate__hinge')
         $('.circulo').css('background-color','white')
         if($("#software_proyectos").hasClass('open')){
@@ -245,6 +315,30 @@ $(function () {
     })
 
     $("#btnProyectosTiendas.fullscreen-open").click(function () {
+
+        if(view == 1){
+            $('#nosotros').fadeOut()
+            /*$('#menuBg').css('background-image', "url('assets/img/NOSOTROS.jpg')")*/
+        }
+        else if(view == 2){
+            $('#software').fadeOut()
+        }
+        else if(view == 3){
+            $('#apps').fadeOut()
+        }
+        else if(view == 4){
+            $('#tiendas').fadeOut()
+        }
+        else if(view == 5){
+            $('#paginas').fadeOut()
+        }
+        else if(view == 6){
+            $('#otros').fadeOut()
+        }
+        else if(view == 7){
+            $('#contacto').fadeOut()
+        }
+
         $(".fullscreen-close").removeClass('animate__hinge')
         $('.circulo').css('background-color','white')
         if($("#tiendas_proyectos").hasClass('open')){
@@ -264,6 +358,30 @@ $(function () {
     })
 
     $("#btnProyectosPaginas.fullscreen-open").click(function () {
+
+        if(view == 1){
+            $('#nosotros').fadeOut()
+            /*$('#menuBg').css('background-image', "url('assets/img/NOSOTROS.jpg')")*/
+        }
+        else if(view == 2){
+            $('#software').fadeOut()
+        }
+        else if(view == 3){
+            $('#apps').fadeOut()
+        }
+        else if(view == 4){
+            $('#tiendas').fadeOut()
+        }
+        else if(view == 5){
+            $('#paginas').fadeOut()
+        }
+        else if(view == 6){
+            $('#otros').fadeOut()
+        }
+        else if(view == 7){
+            $('#contacto').fadeOut()
+        }
+
         $(".fullscreen-close").removeClass('animate__hinge')
         $('.circulo').css('background-color','white')
         if($("#paginas_proyectos").hasClass('open')){
