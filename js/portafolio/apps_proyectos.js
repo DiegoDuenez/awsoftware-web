@@ -50,18 +50,18 @@ $('.siguienteClienteApps').click(function(){
 
     if($(".slider").slick("getSlick").slideCount == 6){
       for(let i = 0; i < 3; i++){
-        console.log(i)
+        
         $('.slider').slick('slickRemove',0);
       }
     }
     else if($(".slider").slick("getSlick").slideCount == 5){
       for(let i = 0; i < 2; i++){
-        console.log(i)
+        
         $('.slider').slick('slickRemove',0);
       }
     }else if($(".slider").slick("getSlick").slideCount == 4){
       for(let i = 0; i < 2; i++){
-        console.log(i)
+        
         $('.slider').slick('slickRemove',0);
       }
     }
@@ -107,18 +107,18 @@ $('.siguienteClienteApps').click(function(){
   
     if($(".slider").slick("getSlick").slideCount == 6){
       for(let i = 0; i < 3; i++){
-        console.log(i)
+        
         $('.slider').slick('slickRemove',0);
       }
     }
     else if($(".slider").slick("getSlick").slideCount == 5){
       for(let i = 0; i < 3; i++){
-        console.log(i)
+        
         $('.slider').slick('slickRemove',0);
       }
     }else if($(".slider").slick("getSlick").slideCount == 4){
       for(let i = 0; i < 2; i++){
-        console.log(i)
+        
         $('.slider').slick('slickRemove',0);
       }
     }
@@ -164,18 +164,18 @@ $('.siguienteClienteApps').click(function(){
   
     if($(".slider").slick("getSlick").slideCount == 6){
       for(let i = 0; i < 3; i++){
-        console.log(i)
+        
         $('.slider').slick('slickRemove',0);
       }
     }
     else if($(".slider").slick("getSlick").slideCount == 5){
       for(let i = 0; i < 3; i++){
-        console.log(i)
+        
         $('.slider').slick('slickRemove',0);
       }
     }else if($(".slider").slick("getSlick").slideCount == 4){
       for(let i = 0; i < 2; i++){
-        console.log(i)
+        
         $('.slider').slick('slickRemove',0);
       }
     }
@@ -230,18 +230,18 @@ $('.siguienteClienteApps').click(function(){
 
     if($(".slider").slick("getSlick").slideCount == 6){
       for(let i = 0; i < 3; i++){
-        console.log(i)
+        
         $('.slider').slick('slickRemove',0);
       }
     }
     else if($(".slider").slick("getSlick").slideCount == 5){
       for(let i = 0; i < 2; i++){
-        console.log(i)
+        
         $('.slider').slick('slickRemove',0);
       }
     }else if($(".slider").slick("getSlick").slideCount == 4){
       for(let i = 0; i < 2; i++){
-        console.log(i)
+        
         $('.slider').slick('slickRemove',0);
       }
     }
@@ -297,18 +297,18 @@ $('.anteriorClienteApps').click(function(){
   
     if($(".slider").slick("getSlick").slideCount == 6){
       for(let i = 0; i < 3; i++){
-        console.log(i)
+        
         $('.slider').slick('slickRemove',0);
       }
     }
     else if($(".slider").slick("getSlick").slideCount == 5){
       for(let i = 0; i < 3; i++){
-        console.log(i)
+        
         $('.slider').slick('slickRemove',0);
       }
     }else if($(".slider").slick("getSlick").slideCount == 4){
       for(let i = 0; i < 2; i++){
-        console.log(i)
+        
         $('.slider').slick('slickRemove',0);
       }
     }
@@ -354,18 +354,18 @@ $('.anteriorClienteApps').click(function(){
   
     if($(".slider").slick("getSlick").slideCount == 6){
       for(let i = 0; i < 3; i++){
-        console.log(i)
+        
         $('.slider').slick('slickRemove',0);
       }
     }
     else if($(".slider").slick("getSlick").slideCount == 5){
       for(let i = 0; i < 3; i++){
-        console.log(i)
+        
         $('.slider').slick('slickRemove',0);
       }
     }else if($(".slider").slick("getSlick").slideCount == 4){
       for(let i = 0; i < 2; i++){
-        console.log(i)
+        
         $('.slider').slick('slickRemove',0);
       }
     }
@@ -419,18 +419,18 @@ $('.anteriorClienteApps').click(function(){
 
     if($(".slider").slick("getSlick").slideCount == 6){
       for(let i = 0; i < 3; i++){
-        console.log(i)
+        
         $('.slider').slick('slickRemove',0);
       }
     }
     else if($(".slider").slick("getSlick").slideCount == 5){
       for(let i = 0; i < 2; i++){
-        console.log(i)
+        
         $('.slider').slick('slickRemove',0);
       }
     }else if($(".slider").slick("getSlick").slideCount == 4){
       for(let i = 0; i < 2; i++){
-        console.log(i)
+        
         $('.slider').slick('slickRemove',0);
       }
     }
@@ -476,18 +476,18 @@ $('.anteriorClienteApps').click(function(){
 
     if($(".slider").slick("getSlick").slideCount == 6){
       for(let i = 0; i < 3; i++){
-        console.log(i)
+        
         $('.slider').slick('slickRemove',0);
       }
     }
     else if($(".slider").slick("getSlick").slideCount == 5){
       for(let i = 0; i < 3; i++){
-        console.log(i)
+        
         $('.slider').slick('slickRemove',0);
       }
     }else if($(".slider").slick("getSlick").slideCount == 4){
       for(let i = 0; i < 2; i++){
-        console.log(i)
+        
         $('.slider').slick('slickRemove',0);
       }
     }
