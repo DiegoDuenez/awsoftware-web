@@ -57,13 +57,17 @@
         
     <?php include('templates/components/nav.html') ?>
 
-    <?php include('templates/components/apps_proyectos.html') ?>
+    <!--====== MENUS DE PORTAFOLIOS START ======-->
 
-    <?php include('templates/components/software_proyectos.html') ?>
+    <?php include('templates/components/portafolio/apps_proyectos.html') ?>
 
-    <?php include('templates/components/tiendas_proyectos.html') ?>
+    <?php include('templates/components/portafolio/software_proyectos.html') ?>
 
-    <?php include('templates/components/paginas_proyectos.html') ?>
+    <?php include('templates/components/portafolio/tiendas_proyectos.html') ?>
+
+    <?php include('templates/components/portafolio/paginas_proyectos.html') ?>
+
+    <!--====== MENUS DE PORTAFOLIOS END ======-->
 
     <?php include('templates/components/menu.html') ?>
 
