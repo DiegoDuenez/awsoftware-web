@@ -7,8 +7,6 @@
 
 
 
-
-
 var clienteViewTiendas = 1;
 
 var img = 'assets/img/proyectos/tiendas/IKIGAI.png'

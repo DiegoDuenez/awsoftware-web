@@ -7,97 +7,288 @@
 
 
 
-var cliente = 'alchile'
+var clienteViewPaginas = 1;
+
 var img = 'assets/img/proyectos/paginas/ALCHILE.png'
 var descripcion = ''
 var cliente = `<span class="proyectos__text--azul">01 - CLIENTE:</span> AlChile </p>`
 
 
-$('#paginas_proyectos_body').on('click','.proyectos__circles *', function() {
+$('#siguienteClientePaginas').click(function(){
 
-
-    cliente = $(this).attr('id')
-    $(this).data('clicked', true);
-
-    if($(this).data('clicked')){
-
-        $(".proyectos__circles *").each(function() {   
-
-            var element = $(this);
-            
-            if(!element.is("#"+cliente)){
-                if(element.hasClass('proyectos__circle--active')){
-                    element.removeClass('proyectos__circle--active')
-                }
-            }
-            
-        })
-        $(this).addClass('proyectos__circle--active')
-    
-    }
-
-    if(cliente == 'alchile'){
-        
-        img  = 'assets/img/proyectos/paginas/ALCHILE.png'
-        descripcion = ''
-        cliente = `<span class="proyectos__text--azul">01 - CLIENTE:</span> Alchile </p>`
-
-    }
-    else if(cliente == 'digital'){
+    if(clienteViewPaginas == 1){
 
         img  = 'assets/img/proyectos/paginas/DIGITAL-COMPANY.png'
         descripcion = ''
         cliente = `<span class="proyectos__text--azul">02 - CLIENTE:</span> Digital Company </p>`
 
+        clienteViewPaginas = 2
+
+        $('#paginas_proyectos_descripcion').fadeOut(500, function() {
+        }).fadeIn(500);
+    
+        $('#paginas_proyectos_cliente').fadeTo(500,0.10, function() {
+            $('#paginas_proyectos_descripcion').empty().show()
+            $('#paginas_proyectos_descripcion').prepend(`<p class="proyectos__text" id="paginas_proyectos_cliente">${cliente}</p> ` + descripcion)
+        }).fadeTo(500,1);
+    
+        $("#paginas_proyectos_img").fadeTo(500,0.10, function() {
+            $('#paginas_proyectos_img').attr("src", img);
+        }).fadeTo(500,1);
+        return false;
+
     }
-    else if(cliente == 'intelenergy'){
+    else if(clienteViewPaginas == 2){
 
         img  = 'assets/img/proyectos/paginas/INTELENERGY.png'
         descripcion = ''
         cliente = `<span class="proyectos__text--azul">03 - CLIENTE:</span> Intelenergy </p>`
 
+        clienteViewPaginas = 3
+
+        $('#paginas_proyectos_descripcion').fadeOut(500, function() {
+        }).fadeIn(500);
+    
+        $('#paginas_proyectos_cliente').fadeTo(500,0.10, function() {
+            $('#paginas_proyectos_descripcion').empty().show()
+            $('#paginas_proyectos_descripcion').prepend(`<p class="proyectos__text" id="paginas_proyectos_cliente">${cliente}</p> ` + descripcion)
+        }).fadeTo(500,1);
+    
+        $("#paginas_proyectos_img").fadeTo(500,0.10, function() {
+            $('#paginas_proyectos_img').attr("src", img);
+        }).fadeTo(500,1);
+        return false;
+
     }
-    else if(cliente == 'jardines'){
+    else if(clienteViewPaginas == 3){
 
         img  = 'assets/img/proyectos/paginas/JARDINES-EDEN.png'
         descripcion = ''
         cliente = `<span class="proyectos__text--azul">04 - CLIENTE:</span> Jardines del Edén </p>`
 
+        clienteViewPaginas = 4
+
+        $('#paginas_proyectos_descripcion').fadeOut(500, function() {
+        }).fadeIn(500);
+    
+        $('#paginas_proyectos_cliente').fadeTo(500,0.10, function() {
+            $('#paginas_proyectos_descripcion').empty().show()
+            $('#paginas_proyectos_descripcion').prepend(`<p class="proyectos__text" id="paginas_proyectos_cliente">${cliente}</p> ` + descripcion)
+        }).fadeTo(500,1);
+    
+        $("#paginas_proyectos_img").fadeTo(500,0.10, function() {
+            $('#paginas_proyectos_img').attr("src", img);
+        }).fadeTo(500,1);
+        return false;
+
     }
-    else if(cliente == 'mandarinas'){
+    else if(clienteViewPaginas == 4){
 
         img  = 'assets/img/proyectos/paginas/MANDARINAS.png'
         descripcion = ''
         cliente = `<span class="proyectos__text--azul">05 - CLIENTE:</span> Radio Taxis Mandarinas </p>`
 
+        clienteViewPaginas = 5
+
+        $('#paginas_proyectos_descripcion').fadeOut(500, function() {
+        }).fadeIn(500);
+    
+        $('#paginas_proyectos_cliente').fadeTo(500,0.10, function() {
+            $('#paginas_proyectos_descripcion').empty().show()
+            $('#paginas_proyectos_descripcion').prepend(`<p class="proyectos__text" id="paginas_proyectos_cliente">${cliente}</p> ` + descripcion)
+        }).fadeTo(500,1);
+    
+        $("#paginas_proyectos_img").fadeTo(500,0.10, function() {
+            $('#paginas_proyectos_img').attr("src", img);
+        }).fadeTo(500,1);
+        return false;
+
     }
-    else if(cliente == 'plastic'){
+    else if(clienteViewPaginas == 5){
 
         img  = 'assets/img/proyectos/paginas/PLASTIC-SURGERY.png'
         descripcion = ''
         cliente = `<span class="proyectos__text--azul">06 - CLIENTE:</span> Plastic Surgery </p>`
 
+        clienteViewPaginas = 6
+
+        $('#paginas_proyectos_descripcion').fadeOut(500, function() {
+        }).fadeIn(500);
+    
+        $('#paginas_proyectos_cliente').fadeTo(500,0.10, function() {
+            $('#paginas_proyectos_descripcion').empty().show()
+            $('#paginas_proyectos_descripcion').prepend(`<p class="proyectos__text" id="paginas_proyectos_cliente">${cliente}</p> ` + descripcion)
+        }).fadeTo(500,1);
+    
+        $("#paginas_proyectos_img").fadeTo(500,0.10, function() {
+            $('#paginas_proyectos_img').attr("src", img);
+        }).fadeTo(500,1);
+        return false;
+
     }
-    else if(cliente == 'rocklag'){
+    else if(clienteViewPaginas == 6){
 
         img  = 'assets/img/proyectos/paginas/ROCKLAG.png'
         descripcion = ''
         cliente = `<span class="proyectos__text--azul">07 - CLIENTE:</span> Rocklag </p>`
 
+        clienteViewPaginas = 7
+
+        $('#paginas_proyectos_descripcion').fadeOut(500, function() {
+        }).fadeIn(500);
+    
+        $('#paginas_proyectos_cliente').fadeTo(500,0.10, function() {
+            $('#paginas_proyectos_descripcion').empty().show()
+            $('#paginas_proyectos_descripcion').prepend(`<p class="proyectos__text" id="paginas_proyectos_cliente">${cliente}</p> ` + descripcion)
+        }).fadeTo(500,1);
+    
+        $("#paginas_proyectos_img").fadeTo(500,0.10, function() {
+            $('#paginas_proyectos_img').attr("src", img);
+        }).fadeTo(500,1);
+        return false;
+
     }
 
-    $('#paginas_proyectos_descripcion').fadeOut(500, function() {
-        //$('#paginas_proyectos_descripcion').text(descripcion).fadeIn(500);
-    }).fadeIn(500);
 
-    $('#paginas_proyectos_cliente').fadeTo(500,0.10, function() {
-        $('#paginas_proyectos_descripcion').empty().show()
-        $('#paginas_proyectos_descripcion').prepend(`<p class="proyectos__text" id="paginas_proyectos_cliente">${cliente}</p> ` + descripcion)
-    }).fadeTo(500,1);
+})
 
-    $("#paginas_proyectos_img").fadeTo(500,0.10, function() {
-        $('#paginas_proyectos_img').attr("src", img);
-    }).fadeTo(500,1);
-    return false;
+
+
+
+$('#anteriorClientePaginas').click(function(){
+
+    if(clienteViewPaginas == 7){
+
+        img  = 'assets/img/proyectos/paginas/PLASTIC-SURGERY.png'
+        descripcion = ''
+        cliente = `<span class="proyectos__text--azul">06 - CLIENTE:</span> Plastic Surgery </p>`
+
+        clienteViewPaginas = 6
+
+        $('#paginas_proyectos_descripcion').fadeOut(500, function() {
+        }).fadeIn(500);
+    
+        $('#paginas_proyectos_cliente').fadeTo(500,0.10, function() {
+            $('#paginas_proyectos_descripcion').empty().show()
+            $('#paginas_proyectos_descripcion').prepend(`<p class="proyectos__text" id="paginas_proyectos_cliente">${cliente}</p> ` + descripcion)
+        }).fadeTo(500,1);
+    
+        $("#paginas_proyectos_img").fadeTo(500,0.10, function() {
+            $('#paginas_proyectos_img').attr("src", img);
+        }).fadeTo(500,1);
+        return false;
+
+    }
+    else  if(clienteViewPaginas == 6){
+
+        img  = 'assets/img/proyectos/paginas/MANDARINAS.png'
+        descripcion = ''
+        cliente = `<span class="proyectos__text--azul">05 - CLIENTE:</span> Radio Taxis Mandarinas </p>`
+
+        clienteViewPaginas = 5
+
+        $('#paginas_proyectos_descripcion').fadeOut(500, function() {
+        }).fadeIn(500);
+    
+        $('#paginas_proyectos_cliente').fadeTo(500,0.10, function() {
+            $('#paginas_proyectos_descripcion').empty().show()
+            $('#paginas_proyectos_descripcion').prepend(`<p class="proyectos__text" id="paginas_proyectos_cliente">${cliente}</p> ` + descripcion)
+        }).fadeTo(500,1);
+    
+        $("#paginas_proyectos_img").fadeTo(500,0.10, function() {
+            $('#paginas_proyectos_img').attr("src", img);
+        }).fadeTo(500,1);
+        return false;
+
+    }
+    else  if(clienteViewPaginas == 5){
+
+        img  = 'assets/img/proyectos/paginas/JARDINES-EDEN.png'
+        descripcion = ''
+        cliente = `<span class="proyectos__text--azul">04 - CLIENTE:</span> Jardines del Edén </p>`
+
+        clienteViewPaginas = 4
+
+        $('#paginas_proyectos_descripcion').fadeOut(500, function() {
+        }).fadeIn(500);
+    
+        $('#paginas_proyectos_cliente').fadeTo(500,0.10, function() {
+            $('#paginas_proyectos_descripcion').empty().show()
+            $('#paginas_proyectos_descripcion').prepend(`<p class="proyectos__text" id="paginas_proyectos_cliente">${cliente}</p> ` + descripcion)
+        }).fadeTo(500,1);
+    
+        $("#paginas_proyectos_img").fadeTo(500,0.10, function() {
+            $('#paginas_proyectos_img').attr("src", img);
+        }).fadeTo(500,1);
+        return false;
+
+    }
+    else if(clienteViewPaginas == 4){
+
+        img  = 'assets/img/proyectos/paginas/INTELENERGY.png'
+        descripcion = ''
+        cliente = `<span class="proyectos__text--azul">03 - CLIENTE:</span> Intelenergy </p>`
+
+        clienteViewPaginas = 3
+
+        $('#paginas_proyectos_descripcion').fadeOut(500, function() {
+        }).fadeIn(500);
+    
+        $('#paginas_proyectos_cliente').fadeTo(500,0.10, function() {
+            $('#paginas_proyectos_descripcion').empty().show()
+            $('#paginas_proyectos_descripcion').prepend(`<p class="proyectos__text" id="paginas_proyectos_cliente">${cliente}</p> ` + descripcion)
+        }).fadeTo(500,1);
+    
+        $("#paginas_proyectos_img").fadeTo(500,0.10, function() {
+            $('#paginas_proyectos_img').attr("src", img);
+        }).fadeTo(500,1);
+        return false;
+
+    }
+    else if(clienteViewPaginas == 3){
+
+        img  = 'assets/img/proyectos/paginas/DIGITAL-COMPANY.png'
+        descripcion = ''
+        cliente = `<span class="proyectos__text--azul">02 - CLIENTE:</span> Digital Company </p>`
+
+        clienteViewPaginas = 2
+
+        $('#paginas_proyectos_descripcion').fadeOut(500, function() {
+        }).fadeIn(500);
+    
+        $('#paginas_proyectos_cliente').fadeTo(500,0.10, function() {
+            $('#paginas_proyectos_descripcion').empty().show()
+            $('#paginas_proyectos_descripcion').prepend(`<p class="proyectos__text" id="paginas_proyectos_cliente">${cliente}</p> ` + descripcion)
+        }).fadeTo(500,1);
+    
+        $("#paginas_proyectos_img").fadeTo(500,0.10, function() {
+            $('#paginas_proyectos_img').attr("src", img);
+        }).fadeTo(500,1);
+        return false;
+
+    }
+    else if(clienteViewPaginas == 2){
+
+        img  = 'assets/img/proyectos/paginas/ALCHILE.png'
+        descripcion = ''
+        cliente = `<span class="proyectos__text--azul">01 - CLIENTE:</span> Alchile </p>`
+
+        clienteViewPaginas = 1
+
+        $('#paginas_proyectos_descripcion').fadeOut(500, function() {
+        }).fadeIn(500);
+    
+        $('#paginas_proyectos_cliente').fadeTo(500,0.10, function() {
+            $('#paginas_proyectos_descripcion').empty().show()
+            $('#paginas_proyectos_descripcion').prepend(`<p class="proyectos__text" id="paginas_proyectos_cliente">${cliente}</p> ` + descripcion)
+        }).fadeTo(500,1);
+    
+        $("#paginas_proyectos_img").fadeTo(500,0.10, function() {
+            $('#paginas_proyectos_img').attr("src", img);
+        }).fadeTo(500,1);
+        return false;
+
+
+    }
 
 })
