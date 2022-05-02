@@ -20,6 +20,20 @@
     padding: 3rem 4rem 1rem 4rem;
 }
 
+    @media screen and (min-width: 628px) and (max-width:700px) { 
+        .footer{
+            padding: 3rem 1rem 1rem 1rem;
+        }
+    }
+    @media screen and (min-width: 310px) and (max-width: 628px) { 
+        .footer{
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 3rem 1rem 1rem 1rem;
+        }
+    }
+
 .footer__content{
     display: flex;
     justify-content: center;
@@ -31,6 +45,7 @@
     font-family: BakbakOneRegular;
     color: white;
     text-decoration: none;
+    text-align: center;
 }
 
 .footer__text--azul{
