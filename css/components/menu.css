@@ -118,7 +118,18 @@
     color: transparent;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgb(255, 255, 255);
+    text-align: center;
 }
+    @media screen and (min-width: 510px) and (max-width:690px) {
+        .fullscreen__link{
+            font-size: 3rem;
+        }
+    }
+    @media screen and (min-width: 318px) and (max-width:509px) {
+        .fullscreen__link{
+            font-size: 2rem;
+        }
+    }
 
 .fullscreen__link:hover{
     color: var(--azul-200);
