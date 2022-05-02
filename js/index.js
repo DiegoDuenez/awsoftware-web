@@ -176,6 +176,8 @@ $(function () {
         
         $("#apps_proyectos").removeClass('open');
         $("#software_proyectos").removeClass('open');
+        $("#tiendas_proyectos").removeClass('open');
+        $("#paginas_proyectos").removeClass('open');
 
 
         $(".fullscreen-close").addClass('animate__hinge')
@@ -221,7 +223,24 @@ $(function () {
         $('.circulo').css('background-color','white')
         if($("#software_proyectos").hasClass('open')){
             $("#software_proyectos").removeClass('open');
-            //$("#navigation-image").attr("src","assets/menu_verde.png");
+            $("#navigation-image").css("display", "block");
+            $("body").css('overflow','scroll')
+            $(".cursor").css("display", "none");
+            
+        }
+        else{
+            $("#software_proyectos").addClass('open');
+            $(".cursor").css("display", "block");
+            $("#navigation-image").css("display", "none");
+           
+        }
+    })
+
+    $("#btnProyectosTiendas.fullscreen-open").click(function () {
+        $(".fullscreen-close").removeClass('animate__hinge')
+        $('.circulo').css('background-color','white')
+        if($("#tiendas_proyectos").hasClass('open')){
+            $("#tiendas_proyectos").removeClass('open');
             $("#navigation-image").css("display", "block");
             $("body").css('overflow','scroll')
             $(".cursor").css("display", "none");
@@ -229,17 +248,29 @@ $(function () {
             
         }
         else{
-            $("#software_proyectos").addClass('open');
-            //$("#navigation-image").attr("src","assets/menu_blanco.png");
-            //$("body").css('overflow','hidden')
+            $("#tiendas_proyectos").addClass('open');
             $(".cursor").css("display", "block");
             $("#navigation-image").css("display", "none");
-            navigation_logo.css("display","none")
             
-            const cursor = document.querySelector(".cursor")
+        }
+    })
+
+    $("#btnProyectosPaginas.fullscreen-open").click(function () {
+        $(".fullscreen-close").removeClass('animate__hinge')
+        $('.circulo').css('background-color','white')
+        if($("#paginas_proyectos").hasClass('open')){
+            $("#paginas_proyectos").removeClass('open');
+            $("#navigation-image").css("display", "block");
+            $("body").css('overflow','scroll')
+            $(".cursor").css("display", "none");
+            navigation_logo.css('display','block')
             
-            document.addEventListener('mousemove', (e)=>{
-            })
+        }
+        else{
+            $("#paginas_proyectos").addClass('open');
+            $(".cursor").css("display", "block");
+            $("#navigation-image").css("display", "none");
+            
         }
     })
 

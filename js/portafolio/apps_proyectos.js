@@ -8,12 +8,8 @@ var limit = 1
 var timeOutTime = 5000
 var proyecto = '#apps_imagenes.proyectos__imagenes'
 
-var descripcion = 'Administración de unidades, operadores y control de pagos de las unidades.'
-var cliente = `<span class="proyectos__text--azul">01 - CLIENTE:</span> Radio Taxis Mandarinas </p>`
-
-
-var arrayImg;
-var index = 1;
+var descripcion = ''
+var cliente = `<span class="proyectos__text--azul">01 - CLIENTE:</span> Abastos Super </p>`
 
 
 $('#apps_proyectos_body').on('click','.proyectos__circles *', function() {
@@ -40,9 +36,9 @@ $('#apps_proyectos_body').on('click','.proyectos__circles *', function() {
 
   if(cliente == 'abastos'){
 
-  //  $('.slider').fadeOut(1).delay(500).fadeIn(300);
+   // $('.slider').fadeOut(1).delay(500).fadeIn(300);
   
-    descripcion = '...'
+    descripcion = ''
     cliente = `<span class="proyectos__text--azul">01 - CLIENTE:</span> Abastos Super </p>`
 
     var img1 = `
@@ -87,7 +83,7 @@ $('#apps_proyectos_body').on('click','.proyectos__circles *', function() {
 
     //$('.slider').fadeOut(1).delay(500).fadeIn(300);
 
-    descripcion = '...'
+    descripcion = ''
     cliente = `<span class="proyectos__text--azul">02 - CLIENTE:</span> Combugas </p>`
 
     var img1 = `
@@ -140,7 +136,7 @@ $('#apps_proyectos_body').on('click','.proyectos__circles *', function() {
 
     //$('.slider').fadeOut(1).delay(500).fadeIn(300);
 
-    descripcion = '...'
+    descripcion = ''
     cliente = `<span class="proyectos__text--azul">03 - CLIENTE:</span> Digital Company </p>`
 
     var img1 = `
@@ -184,7 +180,7 @@ $('#apps_proyectos_body').on('click','.proyectos__circles *', function() {
 
     //$('.slider').fadeOut(1).delay(500).fadeIn(300);
 
-    descripcion = '...'
+    descripcion = ''
     cliente = `<span class="proyectos__text--azul">04 - CLIENTE:</span> Power Force </p>`
 
     var img1 = `
@@ -226,9 +222,9 @@ $('#apps_proyectos_body').on('click','.proyectos__circles *', function() {
   }
   else if(cliente == 'tanquesCombugas'){
    
-   // $('.slider').fadeOut(1).delay(500).fadeIn(300);
+    //$('.slider').fadeOut(1).delay(500).fadeIn(300);
 
-    descripcion = '...'
+    descripcion = ''
     cliente = `<span class="proyectos__text--azul">05 - CLIENTE:</span> Combugas </p>`
 
     var img1 = `
@@ -278,18 +274,20 @@ $('#apps_proyectos_body').on('click','.proyectos__circles *', function() {
   
   }
 
-  $('#apps_proyectos_descripción').fadeOut(500, function() {
-    $(this).text(descripcion).fadeIn(500);
-  })
+  console.log(cliente)
 
   $('#apps_proyectos_descripcion').fadeOut(500, function() {
-    //$('#software_proyectos_descripcion').text(descripcion).fadeIn(500);
   }).fadeIn(500);
 
   $('#apps_proyectos_cliente').fadeTo(500,0.10, function() {
       $('#apps_proyectos_descripcion').empty().show()
       $('#apps_proyectos_descripcion').prepend(`<p class="proyectos__text" id="apps_proyectos_cliente">${cliente}</p> ` + descripcion)
   }).fadeTo(500,1);
+
+  $("#apps_proyectos_img").fadeTo(500,0.10, function() {
+      $('#apps_proyectos_img').attr("src", img);
+  }).fadeTo(500,1);
+  return false;
 
   /*$('#apps_proyectos_cliente').fadeOut(500, function() {
       $('#apps_proyectos_cliente').empty().show()

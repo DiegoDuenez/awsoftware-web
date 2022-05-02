@@ -61,6 +61,10 @@
 
     <?php include('templates/components/software_proyectos.html') ?>
 
+    <?php include('templates/components/tiendas_proyectos.html') ?>
+
+    <?php include('templates/components/paginas_proyectos.html') ?>
+
     <?php include('templates/components/menu.html') ?>
 
     <?php include('templates/layouts/nosotros.html') ?>
@@ -92,6 +96,8 @@
     <scripts src="js/abastos.js"></scripts>
     <script src="js/portafolio/apps_proyectos.js"></script> 
     <script src="js/portafolio/software_proyectos.js"></script> 
+    <script src="js/portafolio/tiendas_proyectos.js"></script> 
+    <script src="js/portafolio/paginas_proyectos.js"></script> 
     <script src="js/menu.js"></script>
 
     
