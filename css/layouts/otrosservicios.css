@@ -74,7 +74,7 @@
     }
     @media screen and (min-width: 318px) and (max-width:730px) {
         .otros-servicios__card{
-            width: 40%;
+            width: 50%;
            height: 20rem;
         }
     }

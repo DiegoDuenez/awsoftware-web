@@ -446,7 +446,8 @@ $(function () {
       ]
   });
 
-  
+
+ 
   $('.slider__otros').slick({
     infinite: true,
     slidesToShow: 1,
@@ -455,8 +456,7 @@ $(function () {
     autoplaySpeed: 2000,
     arrows: true,
     touchThreshold: 100,
-    /*fade: true,
-    cssEase: 'linear',*/
+    
     speed: 1000,
     responsive: [
         {

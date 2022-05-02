@@ -24,6 +24,16 @@
     align-items: center;
     width: 90%;
     height: 100%;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease;
+    -webkit-transition: opacity 1s ease;
+}
+
+.slider__otros.slick-initialized {
+    visibility: visible;
+    opacity: 1;    
 }
 
 .wrapper{
