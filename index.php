@@ -97,7 +97,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <!--=== MAIN JS ===-->
     <script src="js/index.js"></script>
-    <scripts src="js/abastos.js"></scripts>
     <script src="js/portafolio/apps_proyectos.js"></script> 
     <script src="js/portafolio/software_proyectos.js"></script> 
     <script src="js/portafolio/tiendas_proyectos.js"></script> 
