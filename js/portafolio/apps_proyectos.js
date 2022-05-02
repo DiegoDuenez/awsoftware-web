@@ -2,7 +2,7 @@
 
 
 
-var clienteView = 1;
+var clienteViewApps = 1;
 
 var proyecto = '#apps_imagenes.proyectos__imagenes'
 
@@ -12,7 +12,7 @@ var cliente = `<span class="proyectos__text--azul">01 - CLIENTE:</span> Abastos 
 
 $('#siguienteClienteApps').click(function(){
 
-  if(clienteView == 1){
+  if(clienteViewApps == 1){
     
     descripcion = ''
     cliente = `<span class="proyectos__text--azul">02 - CLIENTE:</span> Combugas </p>`
@@ -61,7 +61,7 @@ $('#siguienteClienteApps').click(function(){
       }
     }
 
-    clienteView = 2
+    clienteViewApps = 2
 
     $('#apps_proyectos_descripcion').fadeOut(500, function() {
     }).fadeIn(500);
@@ -77,7 +77,7 @@ $('#siguienteClienteApps').click(function(){
     return false;
 
   }
-  else if(clienteView == 2){
+  else if(clienteViewApps == 2){
 
     descripcion = ''
     cliente = `<span class="proyectos__text--azul">03 - CLIENTE:</span> Digital Company </p>`
@@ -118,7 +118,7 @@ $('#siguienteClienteApps').click(function(){
       }
     }
 
-    clienteView = 3
+    clienteViewApps = 3
 
     $('#apps_proyectos_descripcion').fadeOut(500, function() {
     }).fadeIn(500);
@@ -134,7 +134,7 @@ $('#siguienteClienteApps').click(function(){
     return false;
 
   }
-  else if(clienteView == 3){
+  else if(clienteViewApps == 3){
 
     descripcion = ''
     cliente = `<span class="proyectos__text--azul">04 - CLIENTE:</span> Power Force </p>`
@@ -175,7 +175,7 @@ $('#siguienteClienteApps').click(function(){
       }
     }
 
-    clienteView = 4
+    clienteViewApps = 4
 
     $('#apps_proyectos_descripcion').fadeOut(500, function() {
     }).fadeIn(500);
@@ -191,7 +191,7 @@ $('#siguienteClienteApps').click(function(){
     return false;
 
   }
-  else if(clienteView == 4){
+  else if(clienteViewApps == 4){
 
     descripcion = ''
     cliente = `<span class="proyectos__text--azul">05 - CLIENTE:</span> Combugas </p>`
@@ -241,7 +241,7 @@ $('#siguienteClienteApps').click(function(){
       }
     }
 
-    clienteView = 5
+    clienteViewApps = 5
 
     $('#apps_proyectos_descripcion').fadeOut(500, function() {
     }).fadeIn(500);
@@ -267,7 +267,7 @@ $('#siguienteClienteApps').click(function(){
 $('#anteriorClienteApps').click(function(){
 
 
-  if(clienteView == 5){
+  if(clienteViewApps == 5){
 
     descripcion = ''
     cliente = `<span class="proyectos__text--azul">04 - CLIENTE:</span> Power Force </p>`
@@ -308,7 +308,7 @@ $('#anteriorClienteApps').click(function(){
       }
     }
 
-    clienteView = 4
+    clienteViewApps = 4
 
     $('#apps_proyectos_descripcion').fadeOut(500, function() {
     }).fadeIn(500);
@@ -324,7 +324,7 @@ $('#anteriorClienteApps').click(function(){
     return false;
 
   }
-  else if(clienteView == 4){
+  else if(clienteViewApps == 4){
 
     descripcion = ''
     cliente = `<span class="proyectos__text--azul">03 - CLIENTE:</span> Digital Company </p>`
@@ -365,7 +365,7 @@ $('#anteriorClienteApps').click(function(){
       }
     }
 
-    clienteView = 3
+    clienteViewApps = 3
 
     $('#apps_proyectos_descripcion').fadeOut(500, function() {
     }).fadeIn(500);
@@ -381,7 +381,7 @@ $('#anteriorClienteApps').click(function(){
     return false;
 
   }
-  else if(clienteView == 3){
+  else if(clienteViewApps == 3){
 
     descripcion = ''
     cliente = `<span class="proyectos__text--azul">02 - CLIENTE:</span> Combugas </p>`
@@ -430,7 +430,7 @@ $('#anteriorClienteApps').click(function(){
       }
     }
 
-    clienteView = 2
+    clienteViewApps = 2
 
     $('#apps_proyectos_descripcion').fadeOut(500, function() {
     }).fadeIn(500);
@@ -446,7 +446,7 @@ $('#anteriorClienteApps').click(function(){
     return false;
 
   }
-  else if(clienteView == 2){
+  else if(clienteViewApps == 2){
 
     descripcion = ''
     cliente = `<span class="proyectos__text--azul">01 - CLIENTE:</span> Abastos Super </p>`
@@ -487,7 +487,7 @@ $('#anteriorClienteApps').click(function(){
       }
     }
 
-    clienteView = 1
+    clienteViewApps = 1
 
     $('#apps_proyectos_descripcion').fadeOut(500, function() {
     }).fadeIn(500);
