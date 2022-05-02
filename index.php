@@ -8,7 +8,7 @@
     <meta name="author" content="A W Software">
     <meta name="web_author" content="Diego Dueñez">
     <meta name="city" content="Torreón, Coahuila, México">
-    <meta name="country" content=" MEXICO">
+    <meta name="country" content="MEXICO">
     <meta name="distribution" content="global">
     <meta property="og:title" content="A W Software, Páginas Web, Software, Aplicaciones Móviles" />
     <meta name="Keywords" content="Desarrollo de Aplicaciones Moviles, Software, Realidad Virtual, páginas web, tiendas en línea y hosting en Torreón, Desarrollo web torreón, Páginas web en torreón, software, aplicaciones móviles, apps, google, SEO, software a la medida, diseño, páginas web, diseño de paginas web torreon, diseño de paginas web torreón, paginas web torreon, paginas web torreón, diseño web torreón, diseño web laguna, desarrollo web torreón, presentaciones multimedia torreón, diseño de logotipos torreón, diseño, diseño de paginas web torreon, paginas web torreon, web torreon, sistemas web torreon, sistemas torreon, desarrollo web torreon, desarrollo torreon, diseño sitios web torreon, web coahuila, diseñadores web torreon, diseñadores web, programadores web torreon, programadores web, diseño grafico torreon, diseño torreon, agencia web torreon, agencia torreon, web app torreon, gisa software, citruss, A W Software, status 200">
