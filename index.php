@@ -49,43 +49,78 @@
 </head>
 <body>
 
+    <!--====== ICONO MENU SECCIONES START ======-->
     <?php include('templates/components/navigation.html') ?>
+    <!--====== ICONO MENU SECCIONES END ======-->
 
+
+    <!--====== CURSOR DEL MOUSE START ======-->
     <?php include('templates/components/cursor.html') ?>
+    <!--====== CURSOR DEL MOUSE END ======-->
 
+
+    <!--====== BOTONES SUPERIORES START ======-->
     <?php include('templates/components/buttons.html') ?>
+    <!--====== BOTONES SUPERIORES END ======-->
+
         
+    <!--====== NAVBAR START ======-->
     <?php include('templates/components/nav.html') ?>
+    <!--====== NAVBAR START ======-->
+
 
     <!--====== MENUS DE PORTAFOLIOS START ======-->
-
     <?php include('templates/components/portafolio/apps_proyectos.html') ?>
-
     <?php include('templates/components/portafolio/software_proyectos.html') ?>
-
     <?php include('templates/components/portafolio/tiendas_proyectos.html') ?>
-
     <?php include('templates/components/portafolio/paginas_proyectos.html') ?>
-
     <!--====== MENUS DE PORTAFOLIOS END ======-->
 
+
+    <!--====== MENU DE SECCIONES START ======-->
     <?php include('templates/components/menu.html') ?>
+    <!--====== MENU DE SECCIONES END ======-->
 
+
+    <!--====== NOSOTROS START ======-->
     <?php include('templates/layouts/nosotros.html') ?>
+    <!--====== NOSOTROS END ======-->
 
+
+    <!--====== APPS START ======-->
     <?php include('templates/layouts/apps.html') ?>
+    <!--====== APPS END ======-->
 
+
+    <!--====== PAGINAS START ======-->
     <?php include('templates/layouts/paginas.html') ?>
+    <!--====== PAGINAS END ======-->
 
+
+    <!--====== TIENDAS START ======-->
     <?php include('templates/layouts/tiendas.html') ?>
+    <!--====== TIENDAS END ======-->
 
+
+    <!--====== SOFTWARE START ======-->
     <?php include('templates/layouts/software.html') ?>
+    <!--====== SOFTWARE START ======-->
 
+
+    <!--====== OTROS SERVICIOS START ======-->
     <?php include('templates/layouts/otrosservicios.html') ?>
+    <!--====== OTROS SERVICIOS END ======-->
 
+    
+    <!--====== CONTACTO START ======-->
     <?php include('templates/layouts/contacto.html') ?>
+    <!--====== CONTACTO START ======-->
 
+
+    <!--====== FOOTER START ======-->
     <?php include('templates/components/footer.php') ?>
+    <!--====== FOOTER END ======-->
+
 
     <!--=== JQUERY ===-->
     <script src="libs/jquery/jquery,min.js"></script>
