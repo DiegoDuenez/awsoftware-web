@@ -417,21 +417,29 @@ $(function () {
             slidesToShow: 1,
             slidesToScroll: 1,
             infinite: true,
-            dots: true
+            dots: false,
+            cssEase: 'ease-in-out',
+
           }
         },
         {
           breakpoint: 600,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false,
+            cssEase: 'ease-in-out',
           }
         },
         {
           breakpoint: 480,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false,
+            cssEase: 'ease-in-out',
           }
         }
         // You can unslick at a given breakpoint now by adding:

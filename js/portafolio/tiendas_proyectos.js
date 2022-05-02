@@ -14,7 +14,7 @@ var descripcion = ''
 var cliente = `<span class="proyectos__text--azul">01 - CLIENTE:</span> Ikigai </p>`
 
 
-$('#siguienteClienteTiendas').click(function(){
+$('.siguienteClienteTiendas').click(function(){
 
     if(clienteViewTiendas == 1){
         img  = 'assets/img/proyectos/tiendas/MANAGERMAC.png'
@@ -60,7 +60,7 @@ $('#siguienteClienteTiendas').click(function(){
 })
 
 
-$('#anteriorClienteTiendas').click(function(){
+$('.anteriorClienteTiendas').click(function(){
 
     if(clienteViewTiendas == 3){
 

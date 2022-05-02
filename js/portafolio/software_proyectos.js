@@ -15,7 +15,7 @@ var cliente = `<span class="proyectos__text--azul">01 - CLIENTE:</span> Radio Ta
 
 
 
-$('#siguienteClienteSoftware').click(function(){
+$('.siguienteClienteSoftware').click(function(){
 
     if(clienteViewSoftware == 1){
 
@@ -131,7 +131,7 @@ $('#siguienteClienteSoftware').click(function(){
 
 
 
-$('#anteriorClienteSoftware').click(function(){
+$('.anteriorClienteSoftware').click(function(){
 
     if(clienteViewSoftware == 6){
 

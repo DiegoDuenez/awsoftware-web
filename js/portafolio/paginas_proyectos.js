@@ -14,7 +14,7 @@ var descripcion = ''
 var cliente = `<span class="proyectos__text--azul">01 - CLIENTE:</span> AlChile </p>`
 
 
-$('#siguienteClientePaginas').click(function(){
+$('.siguienteClientePaginas').click(function(){
 
     if(clienteViewPaginas == 1){
 
@@ -155,7 +155,7 @@ $('#siguienteClientePaginas').click(function(){
 
 
 
-$('#anteriorClientePaginas').click(function(){
+$('.anteriorClientePaginas').click(function(){
 
     if(clienteViewPaginas == 7){
 

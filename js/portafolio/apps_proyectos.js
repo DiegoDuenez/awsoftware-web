@@ -15,7 +15,7 @@ var descripcion = ''
 var cliente = `<span class="proyectos__text--azul">01 - CLIENTE:</span> Abastos Super </p>`
 
 
-$('#siguienteClienteApps').click(function(){
+$('.siguienteClienteApps').click(function(){
 
   if(clienteViewApps == 1){
     
@@ -269,7 +269,7 @@ $('#siguienteClienteApps').click(function(){
 })
 
 
-$('#anteriorClienteApps').click(function(){
+$('.anteriorClienteApps').click(function(){
 
 
   if(clienteViewApps == 5){
