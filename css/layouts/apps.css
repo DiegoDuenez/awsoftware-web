@@ -16,6 +16,11 @@
     margin-top: 1rem;
     padding: 2rem;
 }
+    @media screen and (min-width: 318px) and (max-width:530px) {
+        .apps{
+            padding: 1rem;
+        }
+    }
 
 .apps__row{
     display: flex;
@@ -24,6 +29,26 @@
     padding: 0 7rem 0 7rem;
     gap: 5rem;
 }
+    @media screen and (min-width: 891px) and (max-width:1080px) {
+        .apps__row{
+            gap: 3rem;
+            padding: 0 5rem 0 5rem;
+        }
+    }
+    @media screen and (min-width: 801px) and (max-width:890px) {
+        .apps__row{
+            gap: 3rem;
+            padding: 0 ;
+            justify-content: space-between;
+        }
+    }
+    @media screen and (min-width: 318px) and (max-width:800px) {
+        .apps__row{
+            gap: 3rem;
+            padding: 0 ;
+        }
+    }
+
 
 .apps__container{
     display:flex;
@@ -32,6 +57,17 @@
     gap: 2rem;
     align-items: center;
 }
+
+    @media screen and (min-width: 318px) and (max-width:800px) { 
+        .apps__container{
+            width: 100%;
+        }
+
+        #apps__image{
+            display: none;
+        }
+    }
+
 
 .apps__header{
     display: flex;
@@ -53,6 +89,12 @@
     align-items: center;
     gap: 0.5rem;
 }
+    @media screen and (min-width: 318px) and (max-width:1062px) { 
+        .apps__image{
+            width: 100%;
+        }
+    }
+
 
 .apps__title{
     font-family: BakbakOneRegular;
@@ -61,7 +103,7 @@
     text-transform: uppercase;
     letter-spacing: 0.2rem;
 }
-    @media screen and (min-width: 318px) and (max-width: 572px) { 
+    @media screen and (min-width: 318px) and (max-width: 980px) { 
         .apps__title{
             font-size: 2rem;
         }
@@ -118,12 +160,12 @@
 }
     @media screen and (min-width: 573px) and (max-width: 800px) { 
         .apps__text{
-            line-height: 1rem;
+            line-height: 1.5rem;
         }
     }
     @media screen and (min-width: 318px) and (max-width: 572px) { 
         .apps__text{
-            line-height: 1rem;
+            line-height: 1.5rem;
             font-size:1rem;
         }
     }
