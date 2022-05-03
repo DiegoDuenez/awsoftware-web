@@ -10,6 +10,7 @@
     <meta name="city" content="Torreón, Coahuila, México">
     <meta name="description" content="Somos una empresa lagunera con una amplia experiencia en el área de desarrollo de aplicaciones móviles, software, realidad virtual, páginas web, tiendas en línea hospedaje web, diseño gráfico, marketing y publicidad.">
     <meta name="country" content="MEXICO">
+    <meta name="format-detection" content="telephone=no">
     <meta name="distribution" content="global">
     <meta property="og:title" content="A W Software, Páginas Web, Software, Aplicaciones Móviles" />
     <meta name="Keywords" content="Desarrollo de Aplicaciones Moviles, Software, Realidad Virtual, páginas web, tiendas en línea y hosting en Torreón, Desarrollo web torreón, Páginas web en torreón, software, aplicaciones móviles, apps, google, SEO, software a la medida, diseño, páginas web, diseño de paginas web torreon, diseño de paginas web torreón, paginas web torreon, paginas web torreón, diseño web torreón, diseño web laguna, desarrollo web torreón, presentaciones multimedia torreón, diseño de logotipos torreón, diseño, diseño de paginas web torreon, paginas web torreon, web torreon, sistemas web torreon, sistemas torreon, desarrollo web torreon, desarrollo torreon, diseño sitios web torreon, web coahuila, diseñadores web torreon, diseñadores web, programadores web torreon, programadores web, diseño grafico torreon, diseño torreon, agencia web torreon, agencia torreon, web app torreon, gisa software, citruss, A W Software, status 200">
