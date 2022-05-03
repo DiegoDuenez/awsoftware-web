@@ -58,7 +58,9 @@
     font-family: BakbakOneRegular;
     transition: .4s;
     margin-top: 1rem;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
   
 .buttons__proyectos.color-3 {
