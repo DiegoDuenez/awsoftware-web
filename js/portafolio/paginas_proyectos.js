@@ -10,7 +10,7 @@
 var clienteViewPaginas = 1;
 
 var img = 'assets/img/proyectos/paginas/ALCHILE.png'
-var descripcion = ''
+var descripcion = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihilo.'
 var cliente = `<span class="proyectos__text--azul">01 - CLIENTE:</span> AlChile </p>`
 
 
@@ -19,7 +19,7 @@ $('.siguienteClientePaginas').click(function(){
     if(clienteViewPaginas == 1){
 
         img  = 'assets/img/proyectos/paginas/DIGITAL-COMPANY.png'
-        descripcion = ''
+        descripcion = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihilo.'
         cliente = `<span class="proyectos__text--azul">02 - CLIENTE:</span> Digital Company </p>`
 
         clienteViewPaginas = 2
@@ -41,7 +41,7 @@ $('.siguienteClientePaginas').click(function(){
     else if(clienteViewPaginas == 2){
 
         img  = 'assets/img/proyectos/paginas/INTELENERGY.png'
-        descripcion = ''
+        descripcion = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihilo.'
         cliente = `<span class="proyectos__text--azul">03 - CLIENTE:</span> Intelenergy </p>`
 
         clienteViewPaginas = 3
@@ -63,7 +63,7 @@ $('.siguienteClientePaginas').click(function(){
     else if(clienteViewPaginas == 3){
 
         img  = 'assets/img/proyectos/paginas/JARDINES-EDEN.png'
-        descripcion = ''
+        descripcion = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihilo.'
         cliente = `<span class="proyectos__text--azul">04 - CLIENTE:</span> Jardines del Edén </p>`
 
         clienteViewPaginas = 4
@@ -85,7 +85,7 @@ $('.siguienteClientePaginas').click(function(){
     else if(clienteViewPaginas == 4){
 
         img  = 'assets/img/proyectos/paginas/MANDARINAS.png'
-        descripcion = ''
+        descripcion = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihilo.'
         cliente = `<span class="proyectos__text--azul">05 - CLIENTE:</span> Radio Taxis Mandarinas </p>`
 
         clienteViewPaginas = 5
@@ -107,7 +107,7 @@ $('.siguienteClientePaginas').click(function(){
     else if(clienteViewPaginas == 5){
 
         img  = 'assets/img/proyectos/paginas/PLASTIC-SURGERY.png'
-        descripcion = ''
+        descripcion = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihilo.'
         cliente = `<span class="proyectos__text--azul">06 - CLIENTE:</span> Plastic Surgery </p>`
 
         clienteViewPaginas = 6
@@ -129,7 +129,7 @@ $('.siguienteClientePaginas').click(function(){
     else if(clienteViewPaginas == 6){
 
         img  = 'assets/img/proyectos/paginas/ROCKLAG.png'
-        descripcion = ''
+        descripcion = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihilo.'
         cliente = `<span class="proyectos__text--azul">07 - CLIENTE:</span> Rocklag </p>`
 
         clienteViewPaginas = 7
@@ -160,7 +160,7 @@ $('.anteriorClientePaginas').click(function(){
     if(clienteViewPaginas == 7){
 
         img  = 'assets/img/proyectos/paginas/PLASTIC-SURGERY.png'
-        descripcion = ''
+        descripcion = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihilo.'
         cliente = `<span class="proyectos__text--azul">06 - CLIENTE:</span> Plastic Surgery </p>`
 
         clienteViewPaginas = 6
@@ -182,7 +182,7 @@ $('.anteriorClientePaginas').click(function(){
     else  if(clienteViewPaginas == 6){
 
         img  = 'assets/img/proyectos/paginas/MANDARINAS.png'
-        descripcion = ''
+        descripcion = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihilo.'
         cliente = `<span class="proyectos__text--azul">05 - CLIENTE:</span> Radio Taxis Mandarinas </p>`
 
         clienteViewPaginas = 5
@@ -204,7 +204,7 @@ $('.anteriorClientePaginas').click(function(){
     else  if(clienteViewPaginas == 5){
 
         img  = 'assets/img/proyectos/paginas/JARDINES-EDEN.png'
-        descripcion = ''
+        descripcion = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihilo.'
         cliente = `<span class="proyectos__text--azul">04 - CLIENTE:</span> Jardines del Edén </p>`
 
         clienteViewPaginas = 4
@@ -226,7 +226,7 @@ $('.anteriorClientePaginas').click(function(){
     else if(clienteViewPaginas == 4){
 
         img  = 'assets/img/proyectos/paginas/INTELENERGY.png'
-        descripcion = ''
+        descripcion = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihilo.'
         cliente = `<span class="proyectos__text--azul">03 - CLIENTE:</span> Intelenergy </p>`
 
         clienteViewPaginas = 3
@@ -248,7 +248,7 @@ $('.anteriorClientePaginas').click(function(){
     else if(clienteViewPaginas == 3){
 
         img  = 'assets/img/proyectos/paginas/DIGITAL-COMPANY.png'
-        descripcion = ''
+        descripcion = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihilo.'
         cliente = `<span class="proyectos__text--azul">02 - CLIENTE:</span> Digital Company </p>`
 
         clienteViewPaginas = 2
@@ -270,7 +270,7 @@ $('.anteriorClientePaginas').click(function(){
     else if(clienteViewPaginas == 2){
 
         img  = 'assets/img/proyectos/paginas/ALCHILE.png'
-        descripcion = ''
+        descripcion = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihilo.'
         cliente = `<span class="proyectos__text--azul">01 - CLIENTE:</span> Alchile </p>`
 
         clienteViewPaginas = 1

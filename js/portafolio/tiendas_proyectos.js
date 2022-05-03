@@ -10,7 +10,7 @@
 var clienteViewTiendas = 1;
 
 var img = 'assets/img/proyectos/tiendas/IKIGAI.png'
-var descripcion = ''
+var descripcion = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihilo.'
 var cliente = `<span class="proyectos__text--azul">01 - CLIENTE:</span> Ikigai </p>`
 
 
@@ -18,7 +18,7 @@ $('.siguienteClienteTiendas').click(function(){
 
     if(clienteViewTiendas == 1){
         img  = 'assets/img/proyectos/tiendas/MANAGERMAC.png'
-        descripcion = ''
+        descripcion = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihilo.'
         cliente = `<span class="proyectos__text--azul">02 - CLIENTE:</span> Managermac </p>`
 
         clienteViewTiendas = 2
@@ -38,7 +38,7 @@ $('.siguienteClienteTiendas').click(function(){
     }
     else if(clienteViewTiendas == 2){
         img  = 'assets/img/proyectos/tiendas/ROMANA.png'
-        descripcion = ''
+        descripcion = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihilo.'
         cliente = `<span class="proyectos__text--azul">03 - CLIENTE:</span> Romana </p>`
 
         clienteViewTiendas = 3
@@ -65,7 +65,7 @@ $('.anteriorClienteTiendas').click(function(){
     if(clienteViewTiendas == 3){
 
         img  = 'assets/img/proyectos/tiendas/MANAGERMAC.png'
-        descripcion = ''
+        descripcion = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihilo.'
         cliente = `<span class="proyectos__text--azul">02 - CLIENTE:</span> Managermac </p>`
 
         clienteViewTiendas = 2
@@ -87,7 +87,7 @@ $('.anteriorClienteTiendas').click(function(){
     else if(clienteViewTiendas == 2){
 
         img  = 'assets/img/proyectos/tiendas/IKIGAI.png'
-        descripcion = ''
+        descripcion = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihilo.'
         cliente = `<span class="proyectos__text--azul">01 - CLIENTE:</span> Ikigai </p>`
 
         clienteViewTiendas = 1
