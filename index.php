@@ -8,7 +8,7 @@
     <meta name="author" content="A W Software">
     <meta name="web_author" content="Diego Dueñez">
     <meta name="city" content="Torreón, Coahuila, México">
-    <meta name="description" content=" Somos una empresa lagunera con una amplia experiencia en el área de desarrollo de aplicaciones móviles, software, realidad virtual, páginas web, tiendas en línea hospedaje web, diseño gráfico, marketing y publicidad.">
+    <meta name="description" content="Somos una empresa lagunera con una amplia experiencia en el área de desarrollo de aplicaciones móviles, software, realidad virtual, páginas web, tiendas en línea hospedaje web, diseño gráfico, marketing y publicidad.">
     <meta name="country" content="MEXICO">
     <meta name="distribution" content="global">
     <meta property="og:title" content="A W Software, Páginas Web, Software, Aplicaciones Móviles" />
