@@ -11,7 +11,7 @@ var clienteViewApps = 1;
 
 var proyecto = '#apps_imagenes.proyectos__imagenes'
 
-var descripcion = ''
+var descripcion = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihilo.'
 var cliente = `<span class="proyectos__text--azul">01 - CLIENTE:</span> Abastos Super </p>`
 
 
@@ -19,7 +19,7 @@ $('.siguienteClienteApps').click(function(){
 
   if(clienteViewApps == 1){
     
-    descripcion = ''
+    descripcion = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihilo.'
     cliente = `<span class="proyectos__text--azul">02 - CLIENTE:</span> Combugas </p>`
 
     var img1 = `
@@ -84,7 +84,7 @@ $('.siguienteClienteApps').click(function(){
   }
   else if(clienteViewApps == 2){
 
-    descripcion = ''
+    descripcion = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihilo.'
     cliente = `<span class="proyectos__text--azul">03 - CLIENTE:</span> Digital Company </p>`
 
     var img1 = `
@@ -141,7 +141,7 @@ $('.siguienteClienteApps').click(function(){
   }
   else if(clienteViewApps == 3){
 
-    descripcion = ''
+    descripcion = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihilo.'
     cliente = `<span class="proyectos__text--azul">04 - CLIENTE:</span> Power Force </p>`
 
     var img1 = `
@@ -198,7 +198,7 @@ $('.siguienteClienteApps').click(function(){
   }
   else if(clienteViewApps == 4){
 
-    descripcion = ''
+    descripcion = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihilo.'
     cliente = `<span class="proyectos__text--azul">05 - CLIENTE:</span> Combugas </p>`
 
     var img1 = `
@@ -274,7 +274,7 @@ $('.anteriorClienteApps').click(function(){
 
   if(clienteViewApps == 5){
 
-    descripcion = ''
+    descripcion = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihilo.'
     cliente = `<span class="proyectos__text--azul">04 - CLIENTE:</span> Power Force </p>`
 
     var img1 = `
@@ -331,7 +331,7 @@ $('.anteriorClienteApps').click(function(){
   }
   else if(clienteViewApps == 4){
 
-    descripcion = ''
+    descripcion = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihilo.'
     cliente = `<span class="proyectos__text--azul">03 - CLIENTE:</span> Digital Company </p>`
 
     var img1 = `
@@ -388,7 +388,7 @@ $('.anteriorClienteApps').click(function(){
   }
   else if(clienteViewApps == 3){
 
-    descripcion = ''
+    descripcion = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihilo.'
     cliente = `<span class="proyectos__text--azul">02 - CLIENTE:</span> Combugas </p>`
 
     var img1 = `
@@ -453,7 +453,7 @@ $('.anteriorClienteApps').click(function(){
   }
   else if(clienteViewApps == 2){
 
-    descripcion = ''
+    descripcion = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihilo.'
     cliente = `<span class="proyectos__text--azul">01 - CLIENTE:</span> Abastos Super </p>`
 
     var img1 = `
