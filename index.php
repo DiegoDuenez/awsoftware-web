@@ -131,6 +131,9 @@
     <script src="libs/slick-1.8.1/slick/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="libs/particles/particles.js"></script>
+    <script src="libs/particles/app.js"></script>
+    
     <!--=== MAIN JS ===-->
     <script src="js/index.js"></script>
     <script src="js/portafolio/apps_proyectos.js"></script> 
