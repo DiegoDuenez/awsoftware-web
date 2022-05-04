@@ -262,6 +262,71 @@ $('.siguienteClienteApps').click(function(){
     return false;
 
   }
+  else if(clienteViewApps == 5){
+
+    descripcion = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihilo.'
+    cliente = `<span class="proyectos__text--azul">06 - CLIENTE:</span> Combugas </p>`
+
+    var img1 = `
+    <div class="wrapper" id="imgCombugas1">
+      <div class="container">
+        <img src="assets/img/proyectos/tableta/TABLETA-1.png" alt="Combugas" class="slider__img" >
+      </div>
+    </div> `
+
+    var img2 = `
+    <div class="wrapper" id="imgCombugas1">
+      <div class="container">
+        <img src="assets/img/proyectos/tableta/TABLETA-2.png" alt="Combugas" class="slider__img" >
+      </div>
+    </div> `
+
+    var img3 = `
+    <div class="wrapper" id="imgCombugas1">
+      <div class="container">
+        <img src="assets/img/proyectos/tableta/TABLETA-3.png" alt="Combugas" class="slider__img" >
+      </div>
+    </div> `
+
+    $('.slider').slick('slickAdd', img1)
+      $('.slider').slick('slickAdd', img2)
+      $('.slider').slick('slickAdd', img3)
+
+
+    if($(".slider").slick("getSlick").slideCount == 6){
+      for(let i = 0; i < 3; i++){
+        
+        $('.slider').slick('slickRemove',0);
+      }
+    }
+    else if($(".slider").slick("getSlick").slideCount == 5){
+      for(let i = 0; i < 2; i++){
+        
+        $('.slider').slick('slickRemove',0);
+      }
+    }else if($(".slider").slick("getSlick").slideCount == 4){
+      for(let i = 0; i < 2; i++){
+        
+        $('.slider').slick('slickRemove',0);
+      }
+    }
+
+    clienteViewApps = 6
+
+    $('#apps_proyectos_descripcion').fadeOut(500, function() {
+    }).fadeIn(500);
+  
+    $('#apps_proyectos_cliente').fadeTo(500,0.10, function() {
+        $('#apps_proyectos_descripcion').empty().show()
+        $('#apps_proyectos_descripcion').prepend(`<p class="proyectos__text" id="apps_proyectos_cliente">${cliente}</p> ` + descripcion)
+    }).fadeTo(500,1);
+  
+    $("#apps_proyectos_img").fadeTo(500,0.10, function() {
+        $('#apps_proyectos_img').attr("src", img);
+    }).fadeTo(500,1);
+    return false;
+
+  }
 
     
   
@@ -272,7 +337,73 @@ $('.siguienteClienteApps').click(function(){
 $('.anteriorClienteApps').click(function(){
 
 
-  if(clienteViewApps == 5){
+  if(clienteViewApps == 6){
+
+    descripcion = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihilo.'
+    cliente = `<span class="proyectos__text--azul">05 - CLIENTE:</span> Combugas </p>`
+
+    var img1 = `
+    <div class="wrapper" id="imgCombugas1">
+      <div class="container">
+        <img src="assets/img/proyectos/apps/TANQUES-COMBUGAS1.png" alt="Combugas Inventarios" class="slider__img" >
+      </div>
+    </div> `
+
+    var img2 = `
+    <div class="wrapper" id="imgCombugas1">
+      <div class="container">
+        <img src="assets/img/proyectos/apps/TANQUES-COMBUGAS2.png" alt="Combugas Inventarios" class="slider__img" >
+      </div>
+    </div> `
+
+    var img3 = `
+    <div class="wrapper" id="imgCombugas1">
+      <div class="container">
+        <img src="assets/img/proyectos/apps/TANQUES-COMBUGAS3.png" alt="Combugas Inventarios" class="slider__img" >
+      </div>
+    </div> `
+
+
+      $('.slider').slick('slickAdd', img1)
+      $('.slider').slick('slickAdd', img2)
+      $('.slider').slick('slickAdd', img3)
+
+
+    if($(".slider").slick("getSlick").slideCount == 6){
+      for(let i = 0; i < 3; i++){
+        
+        $('.slider').slick('slickRemove',0);
+      }
+    }
+    else if($(".slider").slick("getSlick").slideCount == 5){
+      for(let i = 0; i < 2; i++){
+        
+        $('.slider').slick('slickRemove',0);
+      }
+    }else if($(".slider").slick("getSlick").slideCount == 4){
+      for(let i = 0; i < 2; i++){
+        
+        $('.slider').slick('slickRemove',0);
+      }
+    }
+
+    clienteViewApps = 5
+
+    $('#apps_proyectos_descripcion').fadeOut(500, function() {
+    }).fadeIn(500);
+  
+    $('#apps_proyectos_cliente').fadeTo(500,0.10, function() {
+        $('#apps_proyectos_descripcion').empty().show()
+        $('#apps_proyectos_descripcion').prepend(`<p class="proyectos__text" id="apps_proyectos_cliente">${cliente}</p> ` + descripcion)
+    }).fadeTo(500,1);
+  
+    $("#apps_proyectos_img").fadeTo(500,0.10, function() {
+        $('#apps_proyectos_img').attr("src", img);
+    }).fadeTo(500,1);
+    return false;
+
+  }
+  else if(clienteViewApps == 5){
 
     descripcion = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihilo.'
     cliente = `<span class="proyectos__text--azul">04 - CLIENTE:</span> Power Force </p>`
