@@ -134,7 +134,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="libs/particles/particles.js"></script>
     <script src="libs/particles/app.js"></script>
-    
     <!--=== MAIN JS ===-->
     <script src="js/index.js"></script>
     <script src="js/portafolio/apps_proyectos.js"></script> 
