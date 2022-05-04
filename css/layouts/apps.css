@@ -22,6 +22,7 @@
         }
     }
 
+
 .apps__row{
     display: flex;
     flex-direction: row;
@@ -50,7 +51,9 @@
         }
     }
 
-
+.apps__row--gap2{
+    gap: 2rem;
+}
 .apps__container{
     display:flex;
     width: 50%;
