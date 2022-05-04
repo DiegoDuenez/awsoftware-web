@@ -85,16 +85,23 @@
     justify-content: center;
     align-items: center;
     object-fit: cover;
+    height: 80%;
 }
 
+.otros-servicios__card-body img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
 
+/*
 .otros-servicios__img--100{
     width: 100%;
 }
 
 .otros-servicios__img--90{
     width: 90%;
-}
+}*/
 
 .otros-servicios__card-footer{
     display: flex;
@@ -107,6 +114,7 @@
     text-transform: uppercase;
     padding: 2rem;
     flex-direction: column;
+    height: 20%;
     
 }
 
