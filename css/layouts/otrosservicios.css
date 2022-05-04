@@ -94,15 +94,6 @@
     object-fit: contain;
 }
 
-/*
-.otros-servicios__img--100{
-    width: 100%;
-}
-
-.otros-servicios__img--90{
-    width: 90%;
-}*/
-
 .otros-servicios__card-footer{
     display: flex;
     width: 100%;
