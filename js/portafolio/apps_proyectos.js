@@ -11,35 +11,38 @@ var clienteViewApps = 1;
 
 var proyecto = '#apps_imagenes.proyectos__imagenes'
 
-var descripcion = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihilo.'
+var descripcion = 'App tipo tienda en línea para clientes.'
 var cliente = `<span class="proyectos__text--azul">01 - CLIENTE:</span> Abastos Super </p>`
 
 
 $('.siguienteClienteApps').click(function(){
-
-  if(clienteViewApps == 1){
     
-    descripcion = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihilo.'
+  if(clienteViewApps == 1){
+
+    
+    descripcion = 'App tipo tienda en línea para pedidos de gas y agua.'
     cliente = `<span class="proyectos__text--azul">02 - CLIENTE:</span> Combugas </p>`
+
+    $('.slider').slick('slickGoTo',0);
 
     var img1 = `
     <div class="wrapper" id="imgCombugas1">
       <div class="container">
-        <img src="assets/img/proyectos/apps/COMBUGAS-IOS1.png" alt="Abastos" class="slider__img" >
+        <img src="assets/img/proyectos/apps/COMBUGAS-IOS3.png" alt="CombugasIOS" class="slider__img" >
       </div>
-    </div> `
+    </div>  `
 
     var img2 = `
-    <div class="wrapper" id="imgCombugas1">
+    <div class="wrapper" id="imgCombugas2">
       <div class="container">
         <img src="assets/img/proyectos/apps/COMBUGAS-IOS2.png" alt="CombugasIOS" class="slider__img" >
       </div>
     </div> `
 
     var img3 = `
-    <div class="wrapper" id="imgCombugas1">
+    <div class="wrapper" id="imgCombugas3">
       <div class="container">
-        <img src="assets/img/proyectos/apps/COMBUGAS-IOS3.png" alt="CombugasIOS" class="slider__img" >
+        <img src="assets/img/proyectos/apps/COMBUGAS-IOS1.png" alt="CombugasIOS" class="slider__img" >
       </div>
     </div> `
 
@@ -84,8 +87,12 @@ $('.siguienteClienteApps').click(function(){
   }
   else if(clienteViewApps == 2){
 
-    descripcion = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihilo.'
+
+    descripcion = 'App administración de reportes por atender para sus técnicos.'
     cliente = `<span class="proyectos__text--azul">03 - CLIENTE:</span> Digital Company </p>`
+
+  $('.slider').slick('slickGoTo', 0)
+
 
     var img1 = `
     <div class="wrapper" id="imgCombugas1">
@@ -141,8 +148,12 @@ $('.siguienteClienteApps').click(function(){
   }
   else if(clienteViewApps == 3){
 
-    descripcion = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihilo.'
+
+    descripcion = 'App consulta de autopartes.'
     cliente = `<span class="proyectos__text--azul">04 - CLIENTE:</span> Power Force </p>`
+
+  $('.slider').slick('slickGoTo', 0)
+
 
     var img1 = `
     <div class="wrapper" id="imgCombugas1">
@@ -198,8 +209,11 @@ $('.siguienteClienteApps').click(function(){
   }
   else if(clienteViewApps == 4){
 
-    descripcion = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihilo.'
+
+    descripcion = 'App para control de inventarios de tanques y garrafones en estaciones.'
     cliente = `<span class="proyectos__text--azul">05 - CLIENTE:</span> Combugas </p>`
+
+  $('.slider').slick('slickGoTo', 0)
 
     var img1 = `
     <div class="wrapper" id="imgCombugas1">
@@ -264,8 +278,11 @@ $('.siguienteClienteApps').click(function(){
   }
   else if(clienteViewApps == 5){
 
-    descripcion = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihilo.'
+
+    descripcion = 'App para tablets en sus vehiculos de reparto pedidos por atender.'
     cliente = `<span class="proyectos__text--azul">06 - CLIENTE:</span> Combugas </p>`
+
+  $('.slider').slick('slickGoTo', 0)
 
     var img1 = `
     <div class="wrapper" id="imgCombugas1">
@@ -339,8 +356,10 @@ $('.anteriorClienteApps').click(function(){
 
   if(clienteViewApps == 6){
 
-    descripcion = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihilo.'
+    descripcion = 'App para control de inventarios de tanques y garrafones en estaciones.'
     cliente = `<span class="proyectos__text--azul">05 - CLIENTE:</span> Combugas </p>`
+
+    $('.slider').slick('slickGoTo', 0)
 
     var img1 = `
     <div class="wrapper" id="imgCombugas1">
@@ -362,7 +381,6 @@ $('.anteriorClienteApps').click(function(){
         <img src="assets/img/proyectos/apps/TANQUES-COMBUGAS3.png" alt="Combugas Inventarios" class="slider__img" >
       </div>
     </div> `
-
 
       $('.slider').slick('slickAdd', img1)
       $('.slider').slick('slickAdd', img2)
@@ -405,8 +423,10 @@ $('.anteriorClienteApps').click(function(){
   }
   else if(clienteViewApps == 5){
 
-    descripcion = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihilo.'
+    descripcion = 'App consulta de autopartes.'
     cliente = `<span class="proyectos__text--azul">04 - CLIENTE:</span> Power Force </p>`
+
+  $('.slider').slick('slickGoTo', 0)
 
     var img1 = `
     <div class="wrapper" id="imgCombugas1">
@@ -462,8 +482,12 @@ $('.anteriorClienteApps').click(function(){
   }
   else if(clienteViewApps == 4){
 
-    descripcion = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihilo.'
+
+
+    descripcion = 'App administración de reportes por atender para sus técnicos.'
     cliente = `<span class="proyectos__text--azul">03 - CLIENTE:</span> Digital Company </p>`
+
+  $('.slider').slick('slickGoTo', 0)
 
     var img1 = `
     <div class="wrapper" id="imgCombugas1">
@@ -519,29 +543,32 @@ $('.anteriorClienteApps').click(function(){
   }
   else if(clienteViewApps == 3){
 
-    descripcion = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihilo.'
-    cliente = `<span class="proyectos__text--azul">02 - CLIENTE:</span> Combugas </p>`
 
-    var img1 = `
-    <div class="wrapper" id="imgCombugas1">
-      <div class="container">
-        <img src="assets/img/proyectos/apps/COMBUGAS-IOS1.png" alt="Abastos" class="slider__img" >
-      </div>
-    </div> `
+  descripcion = 'App tipo tienda en línea para pedidos de gas y agua.'
+  cliente = `<span class="proyectos__text--azul">02 - CLIENTE:</span> Combugas </p>`
 
-    var img2 = `
-    <div class="wrapper" id="imgCombugas1">
-      <div class="container">
-        <img src="assets/img/proyectos/apps/COMBUGAS-IOS2.png" alt="CombugasIOS" class="slider__img" >
-      </div>
-    </div> `
+  $('.slider').slick('slickGoTo',0);
 
-    var img3 = `
-    <div class="wrapper" id="imgCombugas1">
-      <div class="container">
-        <img src="assets/img/proyectos/apps/COMBUGAS-IOS3.png" alt="CombugasIOS" class="slider__img" >
-      </div>
-    </div> `
+  var img1 = `
+  <div class="wrapper" id="imgCombugas1">
+    <div class="container">
+      <img src="assets/img/proyectos/apps/COMBUGAS-IOS3.png" alt="CombugasIOS" class="slider__img" >
+    </div>
+  </div>  `
+
+  var img2 = `
+  <div class="wrapper" id="imgCombugas2">
+    <div class="container">
+      <img src="assets/img/proyectos/apps/COMBUGAS-IOS2.png" alt="CombugasIOS" class="slider__img" >
+    </div>
+  </div> `
+
+  var img3 = `
+  <div class="wrapper" id="imgCombugas3">
+    <div class="container">
+      <img src="assets/img/proyectos/apps/COMBUGAS-IOS1.png" alt="CombugasIOS" class="slider__img" >
+    </div>
+  </div> `
 
     $('.slider').slick('slickAdd', img1)
     $('.slider').slick('slickAdd', img2)
@@ -584,8 +611,12 @@ $('.anteriorClienteApps').click(function(){
   }
   else if(clienteViewApps == 2){
 
-    descripcion = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihilo.'
+
+    descripcion = 'App tipo tienda en línea para clientes.'
     cliente = `<span class="proyectos__text--azul">01 - CLIENTE:</span> Abastos Super </p>`
+
+  $('.slider').slick('slickGoTo', 0)
+
 
     var img1 = `
     <div class="wrapper" id="imgCombugas1">

@@ -15,12 +15,16 @@ var cliente = `<span class="proyectos__text--azul">01 - CLIENTE:</span> Radio Ta
 
 
 
+
 $('.siguienteClienteSoftware').click(function(){
+
+    
+
 
     if(clienteViewSoftware == 1){
 
         img  = 'assets/img/proyectos/software/ABASTOS.png'
-        descripcion = 'Call Center para la administración de pedidos.'
+        descripcion = 'Software administrador de pedidos de productos.'
         cliente = `<span class="proyectos__text--azul">02 - CLIENTE:</span> Abastos Super </p>`
 
         clienteViewSoftware = 2
@@ -42,7 +46,7 @@ $('.siguienteClienteSoftware').click(function(){
     else if(clienteViewSoftware == 2){
 
         img  = 'assets/img/proyectos/software/SICOVE.png'
-        descripcion = 'Software de administración, para vehículos de gas.'
+        descripcion = 'Software administración de clientes y consumos de gas.'
         cliente = `<span class="proyectos__text--azul">03 - CLIENTE:</span> SICOVEGAS </p>`
         
         clienteViewSoftware = 3
@@ -64,7 +68,7 @@ $('.siguienteClienteSoftware').click(function(){
     else if(clienteViewSoftware == 3){
 
         img  = 'assets/img/proyectos/software/NISSAN.png'
-        descripcion = 'Administración de vehículos en servicio y de pago de servicio.'
+        descripcion = 'Software Administración de vehículos en servicio, historial y pagos.'
         cliente = `<span class="proyectos__text--azul">04 - CLIENTE:</span> NISSAN </p>`
         
         clienteViewSoftware = 4
@@ -86,7 +90,7 @@ $('.siguienteClienteSoftware').click(function(){
     else if(clienteViewSoftware == 4){
 
         img  = 'assets/img/proyectos/software/PINTURAS-ACUARIO.png'
-        descripcion = 'Software de administración de pedidos.'
+        descripcion = 'Software de levantamiento de pedidos en sitio.'
         cliente = `<span class="proyectos__text--azul">05 - CLIENTE:</span> PINTURAS ACUARIO </p>`
         
         clienteViewSoftware = 5
@@ -136,7 +140,7 @@ $('.anteriorClienteSoftware').click(function(){
     if(clienteViewSoftware == 6){
 
         img  = 'assets/img/proyectos/software/PINTURAS-ACUARIO.png'
-        descripcion = 'Software de administración de pedidos.'
+        descripcion = 'Software de levantamiento de pedidos en sitio.'
         cliente = `<span class="proyectos__text--azul">05 - CLIENTE:</span> PINTURAS ACUARIO </p>`
         
         clienteViewSoftware = 5
@@ -158,7 +162,7 @@ $('.anteriorClienteSoftware').click(function(){
     else if(clienteViewSoftware == 5){
 
         img  = 'assets/img/proyectos/software/NISSAN.png'
-        descripcion = 'Administración de vehículos en servicio y de pago de servicio.'
+        descripcion = 'Software Administración de vehículos en servicio, historial y pagos.'
         cliente = `<span class="proyectos__text--azul">04 - CLIENTE:</span> NISSAN </p>`
         
         clienteViewSoftware = 4
@@ -180,7 +184,7 @@ $('.anteriorClienteSoftware').click(function(){
     else if(clienteViewSoftware == 4){
 
         img  = 'assets/img/proyectos/software/SICOVE.png'
-        descripcion = 'Software de administración, para vehículos de gas.'
+        descripcion = 'Software administración de clientes y consumos de gas.'
         cliente = `<span class="proyectos__text--azul">03 - CLIENTE:</span> SICOVEGAS </p>`
         
         clienteViewSoftware = 3
@@ -202,7 +206,7 @@ $('.anteriorClienteSoftware').click(function(){
     else if(clienteViewSoftware == 3){
 
         img  = 'assets/img/proyectos/software/ABASTOS.png'
-        descripcion = 'Call Center para la administración de pedidos.'
+        descripcion = 'Software administrador de pedidos de productos.'
         cliente = `<span class="proyectos__text--azul">02 - CLIENTE:</span> Abastos Super </p>`
 
         clienteViewSoftware = 2
