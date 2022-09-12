@@ -9,18 +9,22 @@
 
 var clienteViewPaginas = 1;
 
-var img = 'assets/img/proyectos/paginas/ALCHILE.png'
+
+
+var img  = 'assets/img/proyectos/paginas/OECA.png'
 var descripcion = ''
-var cliente = `<span class="proyectos__text--azul">01 - CLIENTE:</span> AlChile </p>`
+var cliente = `<span class="proyectos__text--azul">01 - CLIENTE:</span> OECA </p>`
+
 
 
 $('.siguienteClientePaginas').click(function(){
 
     if(clienteViewPaginas == 1){
 
-        img  = 'assets/img/proyectos/paginas/DIGITAL-COMPANY.png'
+        img = 'assets/img/proyectos/paginas/ALCHILE.png'
         descripcion = ''
-        cliente = `<span class="proyectos__text--azul">02 - CLIENTE:</span> Digital Company </p>`
+        cliente = `<span class="proyectos__text--azul">02 - CLIENTE:</span> AlChile </p>`
+        
 
         clienteViewPaginas = 2
 
@@ -150,9 +154,9 @@ $('.siguienteClientePaginas').click(function(){
     }
     else if(clienteViewPaginas == 7){
 
-        img  = 'assets/img/proyectos/paginas/OECA.png'
+        img  = 'assets/img/proyectos/paginas/DIGITAL-COMPANY.png'
         descripcion = ''
-        cliente = `<span class="proyectos__text--azul">08- CLIENTE:</span> OECA </p>`
+        cliente = `<span class="proyectos__text--azul">08 - CLIENTE:</span> Digital Company </p>`
 
         clienteViewPaginas = 8
 
@@ -290,9 +294,10 @@ $('.anteriorClientePaginas').click(function(){
     }
     else if(clienteViewPaginas == 3){
 
-        img  = 'assets/img/proyectos/paginas/DIGITAL-COMPANY.png'
+        img = 'assets/img/proyectos/paginas/ALCHILE.png'
         descripcion = ''
-        cliente = `<span class="proyectos__text--azul">02 - CLIENTE:</span> Digital Company </p>`
+        cliente = `<span class="proyectos__text--azul">02 - CLIENTE:</span> AlChile </p>`
+
 
         clienteViewPaginas = 2
 
@@ -312,9 +317,10 @@ $('.anteriorClientePaginas').click(function(){
     }
     else if(clienteViewPaginas == 2){
 
-        img  = 'assets/img/proyectos/paginas/ALCHILE.png'
-        descripcion = ''
-        cliente = `<span class="proyectos__text--azul">01 - CLIENTE:</span> Alchile </p>`
+        var img  = 'assets/img/proyectos/paginas/OECA.png'
+        var descripcion = ''
+        var cliente = `<span class="proyectos__text--azul">01 - CLIENTE:</span> OECA </p>`
+
 
         clienteViewPaginas = 1
 

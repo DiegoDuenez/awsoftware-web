@@ -9,9 +9,9 @@
 
 var clienteViewTiendas = 1;
 
-var img = 'assets/img/proyectos/tiendas/IKIGAI.png'
+var img = 'assets/img/proyectos/tiendas/BLACKWOLFTRC.png'
 var descripcion = ''
-var cliente = `<span class="proyectos__text--azul">01 - CLIENTE:</span> Ikigai </p>`
+var cliente = `<span class="proyectos__text--azul">01 - CLIENTE:</span> Black Wolf </p>`
 
 
 $('.siguienteClienteTiendas').click(function(){
@@ -57,9 +57,10 @@ $('.siguienteClienteTiendas').click(function(){
         return false;
     }
     else if(clienteViewTiendas == 3){
-        img  = 'assets/img/proyectos/tiendas/BLACKWOLFTRC.png'
+
+        img = 'assets/img/proyectos/tiendas/IKIGAI.png'
         descripcion = ''
-        cliente = `<span class="proyectos__text--azul">04 - CLIENTE:</span> Black Wolf </p>`
+        cliente = `<span class="proyectos__text--azul">04 - CLIENTE:</span> Ikigai </p>`
 
         clienteViewTiendas = 4
 
@@ -128,9 +129,10 @@ $('.anteriorClienteTiendas').click(function(){
     }
     else if(clienteViewTiendas == 2){
 
-        img  = 'assets/img/proyectos/tiendas/IKIGAI.png'
+        img = 'assets/img/proyectos/tiendas/BLACKWOLFTRC.png'
         descripcion = ''
-        cliente = `<span class="proyectos__text--azul">01 - CLIENTE:</span> Ikigai </p>`
+        cliente = `<span class="proyectos__text--azul">01 - CLIENTE:</span> Black Wolf </p>`
+
 
         clienteViewTiendas = 1
 
