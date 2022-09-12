@@ -17,7 +17,8 @@
     position: fixed;
     bottom:0;
     width: 100%;
-    padding: 3rem 4rem 1rem 4rem;
+    padding: 0rem 4rem 1rem 4rem;
+    height: max-content;
 }
 
     @media screen and (min-width: 628px) and (max-width:700px) { 

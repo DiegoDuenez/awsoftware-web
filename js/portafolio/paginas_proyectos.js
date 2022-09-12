@@ -148,7 +148,28 @@ $('.siguienteClientePaginas').click(function(){
         return false;
 
     }
+    else if(clienteViewPaginas == 7){
 
+        img  = 'assets/img/proyectos/paginas/OECA.png'
+        descripcion = ''
+        cliente = `<span class="proyectos__text--azul">08- CLIENTE:</span> OECA </p>`
+
+        clienteViewPaginas = 8
+
+        $('#paginas_proyectos_descripcion').fadeOut(500, function() {
+        }).fadeIn(500);
+    
+        $('#paginas_proyectos_cliente').fadeTo(500,0.10, function() {
+            $('#paginas_proyectos_descripcion').empty().show()
+            $('#paginas_proyectos_descripcion').prepend(`<p class="proyectos__text" id="paginas_proyectos_cliente">${cliente}</p> ` + descripcion)
+        }).fadeTo(500,1);
+    
+        $("#paginas_proyectos_img").fadeTo(500,0.10, function() {
+            $('#paginas_proyectos_img').attr("src", img);
+        }).fadeTo(500,1);
+        return false;
+
+    }
 
 })
 
@@ -157,7 +178,29 @@ $('.siguienteClientePaginas').click(function(){
 
 $('.anteriorClientePaginas').click(function(){
 
-    if(clienteViewPaginas == 7){
+    if(clienteViewPaginas == 8){
+
+        img  = 'assets/img/proyectos/paginas/ROCKLAG.png'
+        descripcion = ''
+        cliente = `<span class="proyectos__text--azul">07 - CLIENTE:</span> Rocklag </p>`
+
+        clienteViewPaginas = 7
+
+        $('#paginas_proyectos_descripcion').fadeOut(500, function() {
+        }).fadeIn(500);
+    
+        $('#paginas_proyectos_cliente').fadeTo(500,0.10, function() {
+            $('#paginas_proyectos_descripcion').empty().show()
+            $('#paginas_proyectos_descripcion').prepend(`<p class="proyectos__text" id="paginas_proyectos_cliente">${cliente}</p> ` + descripcion)
+        }).fadeTo(500,1);
+    
+        $("#paginas_proyectos_img").fadeTo(500,0.10, function() {
+            $('#paginas_proyectos_img').attr("src", img);
+        }).fadeTo(500,1);
+        return false;
+
+    }
+    else if(clienteViewPaginas == 7){
 
         img  = 'assets/img/proyectos/paginas/PLASTIC-SURGERY.png'
         descripcion = ''

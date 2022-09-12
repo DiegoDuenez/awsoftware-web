@@ -56,13 +56,55 @@ $('.siguienteClienteTiendas').click(function(){
         }).fadeTo(500,1);
         return false;
     }
+    else if(clienteViewTiendas == 3){
+        img  = 'assets/img/proyectos/tiendas/BLACKWOLFTRC.png'
+        descripcion = ''
+        cliente = `<span class="proyectos__text--azul">04 - CLIENTE:</span> Black Wolf </p>`
+
+        clienteViewTiendas = 4
+
+        $('#tiendas_proyectos_descripcion').fadeOut(500, function() {
+        }).fadeIn(500);
+    
+        $('#tiendas_proyectos_cliente').fadeTo(500,0.10, function() {
+            $('#tiendas_proyectos_descripcion').empty().show()
+            $('#tiendas_proyectos_descripcion').prepend(`<p class="proyectos__text" id="tiendas_proyectos_cliente">${cliente}</p> ` + descripcion)
+        }).fadeTo(500,1);
+    
+        $("#tiendas_proyectos_img").fadeTo(500,0.10, function() {
+            $('#tiendas_proyectos_img').attr("src", img);
+        }).fadeTo(500,1);
+        return false;
+    }
 
 })
 
 
 $('.anteriorClienteTiendas').click(function(){
 
-    if(clienteViewTiendas == 3){
+    if(clienteViewTiendas == 4){
+
+        img  = 'assets/img/proyectos/tiendas/ROMANA.png'
+        descripcion = ''
+        cliente = `<span class="proyectos__text--azul">03 - CLIENTE:</span> Romana </p>`
+
+        clienteViewTiendas = 3
+
+        $('#tiendas_proyectos_descripcion').fadeOut(500, function() {
+        }).fadeIn(500);
+    
+        $('#tiendas_proyectos_cliente').fadeTo(500,0.10, function() {
+            $('#tiendas_proyectos_descripcion').empty().show()
+            $('#tiendas_proyectos_descripcion').prepend(`<p class="proyectos__text" id="tiendas_proyectos_cliente">${cliente}</p> ` + descripcion)
+        }).fadeTo(500,1);
+    
+        $("#tiendas_proyectos_img").fadeTo(500,0.10, function() {
+            $('#tiendas_proyectos_img').attr("src", img);
+        }).fadeTo(500,1);
+        return false;
+
+    }
+    else if(clienteViewTiendas == 3){
 
         img  = 'assets/img/proyectos/tiendas/MANAGERMAC.png'
         descripcion = ''
